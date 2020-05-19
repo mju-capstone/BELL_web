@@ -14,13 +14,10 @@
 
 <p align="center">
   명지대학교 캡스톤 2020-1 프로젝트 <br/> 
-  미세먼지 조회 Node.js 웹 서비스 
+  미세먼지 조회 Node.js 웹 서비스 <br/>
 </p>
 
-
-
 <br/>
-
 
 ### 선수 환경
 ```
@@ -31,7 +28,11 @@ npm 6.10.2
 ### 시작 방법
 
 ```
+$ git clone https://github.com/mju-capstone/BELL_web.git
 $ cd BELL-web
 $ nodemon
 ```
 
+<br/>
+
+> 데이터 분석 페이지는 [여기](https://github.com/mju-capstone/BELL_data_analysis)
