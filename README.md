@@ -30,6 +30,7 @@ npm 6.10.2
 ```
 $ git clone https://github.com/mju-capstone/BELL_web.git
 $ cd BELL-web
+$ npm install 
 $ nodemon
 ```
 
