@@ -14,7 +14,7 @@
 
 <p align="center">
   명지대학교 캡스톤 2020-1 프로젝트 <br/> 
-  미세먼지 조회 웹 서비스 
+  미세먼지 조회 Node.js 웹 서비스 
 </p>
 
 
@@ -31,7 +31,7 @@ npm 6.10.2
 ### 시작 방법
 
 ```
-$ cd cd BELL-web
+$ cd BELL-web
 $ nodemon
 ```
 
