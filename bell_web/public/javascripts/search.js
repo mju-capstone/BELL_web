@@ -8,3 +8,14 @@ $(document).ready(function(){
           });
     });
 });
+
+// set map properties
+function initialize() {
+    var mapProp = {
+      center:new google.maps.LatLng(37.250943, 127.028344),
+      zoom:10,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("map_container"),mapProp);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
