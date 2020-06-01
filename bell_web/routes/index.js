@@ -12,6 +12,4 @@ router.get('/aqi', function(req,res,next){
   res.render('aqi/aqi_page')
 })
 
-
-
 module.exports = router;
