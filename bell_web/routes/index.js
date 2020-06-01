@@ -8,14 +8,10 @@ router.get('/', function(req, res, next) {
 
 
 /* get aqi page */
-
-router.get('/search', function(req,res,next){
-  res.render('aqi_includes/searchRegion')
+router.get('/aqi', function(req,res,next){
+  res.render('aqi/aqi_page')
 })
 
-router.get('/info', function(req, res, next){
-  res.render('aqi_includes/aqiInfo')
-})
 
 
 module.exports = router;
