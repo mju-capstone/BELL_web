@@ -1,6 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
 .search_view {
-    height: 980px;
+    height: 750px;
     width: 100%;
     padding: 50px;
-    background-color: beige;
+    background-image: url("/img/background_image.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity:0.9!important;
+}
+
+h1.title {
+    padding: 150px 0px 0px 150px;
+    font-size: 50px;
+    font-family: 'Caveat', cursive;
+}
+
+h6.subtitle {
+    padding: 0px 0px 10px 150px;
+    font-size: large;
+    font-family: 'Caveat', cursive;
+    /* font-family :  */
+}
+
+.input-group.search_bar {
+    width: 600px;
+    padding: 0px 0px 0px 150px;
 }
