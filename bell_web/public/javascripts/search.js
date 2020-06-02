@@ -6,7 +6,7 @@ $(document).ready(function(){
             left: 0,
             behavior: 'smooth'
           });
-    });
+    });          
 });
 
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
