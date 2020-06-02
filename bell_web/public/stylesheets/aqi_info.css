@@ -1,11 +1,11 @@
 .info_view {
-    height: 980px;
+    height: 100vh;
     width: 100%;
-    padding: 50px;
-    background-color: paleturquoise;
+    /* background-color: #bec7df; */
+    background-color: #b1daf1;
 }
 
 #map_container {
-    height: 500px;
-    width: 1000px;
+    height: 100vh;
+    width: 50%;
 }

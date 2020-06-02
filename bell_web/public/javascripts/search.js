@@ -2,7 +2,7 @@
 $(document).ready(function(){
     $(".btn-outline-dark").click(function() {
         window.scrollTo({
-            top: 780,
+            top: 760,
             left: 0,
             behavior: 'smooth'
           });
