@@ -1,11 +1,22 @@
 .info_view {
-    height: 980px;
+    height: 100vh;
     width: 100%;
-    padding: 50px;
-    background-color: #bec7df;
-}
+    /* background-color: #bec7df; */
+    /* background-color: #b1daf1; */
+    background-color: #ffffff;
+ }
 
 #map_container {
-    height: 500px;
-    width: 1000px;
+    height: 100vh;
+    width: 60%;
+    float: left;
 }
+
+#info_container {
+    height: 100vh;
+    width: 40%;
+    image-rendering: url("/img/superlative.png");
+    background-color: #ff9a9a;
+    float: left;
+}
+

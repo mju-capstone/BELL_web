@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
 .search_view {
-    height: 750px;
+    height: 100vh;
     width: 100%;
     padding: 50px;
     background-image: url("/img/background_image.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     opacity:0.9!important;
 }
 
