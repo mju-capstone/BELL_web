@@ -13,10 +13,48 @@
 }
 
 #info_container {
+    font-family: 'Caveat', cursive;
     height: 100vh;
     width: 40%;
-    image-rendering: url("/img/superlative.png");
-    background-color: #ff9a9a;
+    /*background-image : url("/img/superlative.png");*/
+    background-color: #ffffff;
     float: left;
 }
+
+
+#img {
+    position: relative;
+    left:150px;
+    top: -60px;
+    float: left;
+
+}
+
+#info{
+    float: left;
+    left: 100px;
+    top: 50px;
+}
+
+
+h2.date {
+    padding: 90px 0px 0px 0px;
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
+}
+
+h3.con {
+    padding: 10px 0px 0px 320px;
+    font-size: 30px;
+    left: 110px;
+    font-family: 'Caveat', cursive;
+}
+
+h3.state{
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+    color: #2b8ba3;
+}
+
+
 
