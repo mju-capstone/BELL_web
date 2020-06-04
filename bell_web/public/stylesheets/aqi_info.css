@@ -20,12 +20,12 @@
     float: left;
 }
 
-#img.relative {
+#img {
     position: relative;
-    left: 100px;
-    top: -60px;
+    left:160px;
+    top: -110px;
     float: left;
-    width: 130px;
+
 }
 
 #info{
@@ -55,6 +55,7 @@ h3.con {
 h3.state{
     font-size: 35px;
     font-family: 'Caveat', cursive;
-    color: #2b8ba3;
+    font-weight: bold ;
+    color: #0a8bac;
     padding-left: 320px;
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
 .search_view {
-    height: 98vh;
+    height: 100vh;
     width: 100%;
     padding: 50px;
     background-image: url("/img/background_image.jpg");
@@ -32,47 +32,27 @@ h6.subtitle {
 
 *{padding:0;margin:0;}
 
-div#drop{
+.input-group-append {
+    padding: 0px 0px 0px 400px;
+
+}
+
+
+.float{
     font-family: 'Caveat', cursive;
     font-size: 30px;
 	position:fixed;
 	width:110px;
 	height:60px;
-	bottom:65px;
-	right:70px;
-	background-color:rgb(115, 143, 167);
+	bottom:40px;
+	right:40px;
+	background-color:rgb(86, 112, 133);
 	color:#FFF;
-    border-radius:50px;
+	border-radius:50px;
 	text-align:center;
-    box-shadow: 2px 2px 3px #999;
-    padding-top: 8px;
+	box-shadow: 2px 2px 3px #999;
 }
 
-.dropdown-toggle{
-    color: rgb(255, 255, 255);
-}
-
-.dropdown-menu{
-    font-size: 18px;
-}
-
-div#top{
-    font-family: 'Caveat', cursive;
-    font-size: 30px;
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:65px;
-	left:70px;
-	background-color:rgb(115, 143, 167);
-	color:#FFF;
-    border-radius:50px;
-	text-align:center;
-    box-shadow: 2px 2px 3px #999;
-    padding-top: 8px;
-    padding-right: 4px;
-}
-
-a{
-    color: white;
-}
+.my-float{
+	margin-top:22px;
+} 
