@@ -9,6 +9,29 @@ $(document).ready(function(){
     });          
 });
 
+// floating button 클릭 이벤트
+$(document).ready(function(){
+    $("#status").click(function() {
+        var location = document.querySelector(".graph_view").offsetTop;
+        window.scrollTo({
+            top: location,
+            left: 0,
+            behavior: 'smooth'
+          });
+    });          
+});
+
+$(document).ready(function(){
+    $("#seo_chi").click(function() {
+        var location2 = document.querySelector(".china_seoul_view").offsetTop;
+        window.scrollTo({
+            top: location2,
+            left: 0,
+            behavior: 'smooth'
+          });
+    });          
+});
+
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.setPosition(pos);
     infoWindow.setContent(browserHasGeolocation ?
