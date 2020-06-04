@@ -1,7 +1,21 @@
 .info_view
+    //h1="this is Info"
+    //br
+    //br
     div#map_container
-    div#mise.temperature
-        p 16°C
-    div#mise.condition
-        img(src='../../public/img/good.png' alt='good')
-        p good
+    
+    
+    div#info_container
+     br
+     br
+     h2.date(style='text-align:center;') 2020/06/04
+     h2.finedust(style='text-align:center;') Today's fine dust concentration
+
+     div#info
+     br
+     h3.con= "49㎍/㎥"
+     h3.state(style='text-align:center;') very good
+     
+      div#img
+       img.relative(src='img/good2.png' width="130")
+

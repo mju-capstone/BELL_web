@@ -24,12 +24,16 @@
 node 10.16.3
 npm 6.10.2
 ```
+### 사용 라이브러리
+
+- [chart.js](https://www.chartjs.org/)
+
 
 ### 시작 방법
 
 ```
 $ git clone https://github.com/mju-capstone/BELL_web.git
-$ cd BELL-web
+$ cd bell_web
 $ npm install 
 $ nodemon
 ```
