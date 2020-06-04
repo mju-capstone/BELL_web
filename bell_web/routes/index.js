@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var request = require('request');
 
 var request = require('request');
 
@@ -12,7 +13,7 @@ router.get('/', function(req, res, next) {
 
 
 /* get aqi page */
-router.get('/aqi', function(req,res,next){
+router.get('/aqi', function(req, res, next){
   res.render('aqi/aqi_page')
 })
 
