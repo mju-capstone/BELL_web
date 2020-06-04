@@ -2,9 +2,8 @@
     height: 100vh;
     width: 100%;
     /* background-color: #bec7df; */
-    /* background-color: #b1daf1; */
-    background-color: #ffffff;
- }
+    background-color: #d2e2f5;
+}
 
 #map_container {
     height: 100vh;
@@ -21,13 +20,12 @@
     float: left;
 }
 
-
-#img {
+#img.relative {
     position: relative;
-    left:150px;
+    left: 100px;
     top: -60px;
     float: left;
-
+    width: 130px;
 }
 
 #info{
@@ -36,11 +34,15 @@
     top: 50px;
 }
 
-
 h2.date {
     padding: 90px 0px 0px 0px;
     font-size: 40px;
     font-family: 'Caveat', cursive;
+    text-align: center;
+}
+
+h2.finedust {
+    text-align:center;
 }
 
 h3.con {
@@ -54,7 +56,5 @@ h3.state{
     font-size: 35px;
     font-family: 'Caveat', cursive;
     color: #2b8ba3;
+    padding-left: 320px;
 }
-
-
-
