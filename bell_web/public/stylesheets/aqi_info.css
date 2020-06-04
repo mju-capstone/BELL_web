@@ -1,11 +1,39 @@
 .info_view {
-    height: 100vh;
+    height: 98vh;
     width: 100%;
     /* background-color: #bec7df; */
-    background-color: #b1daf1;
+    background-color: #d2e2f5;
 }
 
 #map_container {
-    height: 100vh;
+    height: 98vh;
     width: 50%;
+    float: left;
+}
+
+#mise {
+    float: right;
+}
+
+#mise.temperature {
+    /* width: 50%; */
+    padding-top: 200px;
+    padding-left: 150px;
+    float: left;
+    font-size: 30px;
+
+
+}
+
+#mise.condition {
+    /* width: 50%; */
+    padding-top: 300px;
+    padding-right: 150px;
+    float: right;
+    font-size: 30px;
+}
+
+#mise.condition.img {
+    width: 30px;
+    height: 30px;
 }

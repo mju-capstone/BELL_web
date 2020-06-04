@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var request = require('request');
 
 var Chart = require('chart.js')
 
@@ -10,8 +11,16 @@ router.get('/', function(req, res, next) {
 
 
 /* get aqi page */
-router.get('/aqi', function(req,res,next){
+router.get('/aqi', function(req, res, next){
   res.render('aqi/aqi_page')
 })
+
+
+// finedust api connection
+function realTimeMise() {
+  $.ajax({
+    url:Forec
+  })
+}
 
 module.exports = router;
