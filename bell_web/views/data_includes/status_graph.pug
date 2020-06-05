@@ -1,18 +1,13 @@
-extends ../layout
-
-block content
-    .info_view
-        div.graph_view
-            h1="Status Graph"
-            br
-            br
-
-            canvas(id='status_graph', width='550', height='350')
-        
-        div#info_container
+.info_view
+    br
+    br
+    .row
+        .col 
+            canvas(id='status_graph', width='300', height='300')
+        .col
             br
             h3="대기오염 정보"
-            table.table
+            table.table.table-striped
                 thead
                     tr
                     th(scope='col')
@@ -57,4 +52,71 @@ block content
                     td.con=so2
                     td.con=co
                     td.con=no2
-            .p.date=data + " 기준"
+
+            p.date=data + " 기준"
+
+
+
+
+
+
+//- extends ../layout
+
+//- block content
+//-     .info_view
+//-         div.graph_view
+//-             h1="Status Graph"
+//-             br
+//-             br
+
+//-             canvas(id='status_graph', width='550', height='350')
+        
+//-         div#info_container
+//-             br
+//-             h3="대기오염 정보"
+//-             table.table
+//-                 thead
+//-                     tr
+//-                     th(scope='col')
+//-                         span
+//-                             | CAI
+//-                             br
+//-                             | 통합대기지수
+//-                     th(scope='col')
+//-                         span
+//-                             | PM10
+//-                             br
+//-                             | 미세먼지
+//-                     th(scope='col')
+//-                         span
+//-                             | O3
+//-                             br
+//-                             | 오존
+//-                 tbody
+//-                     tr
+//-                     td.con=cai
+//-                     td.con=pm10
+//-                     td.con=o3
+//-                 thead
+//-                     tr
+//-                     th(scope='col')
+//-                         span
+//-                             | SO2
+//-                             br
+//-                             | 아황산가스
+//-                     th(scope='col')
+//-                         span
+//-                             | CO
+//-                             br
+//-                             | 일산화탄소
+//-                     th(scope='col')
+//-                         span
+//-                             | NO2
+//-                             br
+//-                             | 이산화질소
+//-                 tbody
+//-                     tr
+//-                     td.con=so2
+//-                     td.con=co
+//-                     td.con=no2
+//-             .p.date=data + " 기준"
