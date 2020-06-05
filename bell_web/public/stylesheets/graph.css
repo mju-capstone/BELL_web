@@ -1,6 +1,41 @@
 .graph_view {
-    height: 980px;
-    width: 100%;
-    padding: 50px;
     background-color: mediumaquamarine;
+    font-family: 'Caveat', cursive;
+    height: 100vh;
+    width: 60%;
+    float: left;  
+}
+.info_view {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #bec7df; */
+    background-color: #d2e2f5;
+}
+#info_container {
+    font-family: 'Caveat', cursive;
+    height: 100vh;
+    width: 40%;
+    /*background-image : url("/img/superlative.png");*/
+    background-color: #ffffff;
+    float: left;
+    padding: 10px 10px 10px 10px;
+}
+h1{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+canvas{
+    padding-left: 50px;
+}
+.table{
+    padding-top: 200px;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+.p{
+    text-align: right;
+    margin-top: -20px;
+    font-family: 'Nanum Gothic Coding', monospace;
+}
+h3{
+    font-family: 'Nanum Gothic Coding', monospace;
 }
