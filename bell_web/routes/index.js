@@ -32,8 +32,14 @@ router.get('/aqi', function(req,res,next){
 
     data = obj.list[0].dataTime
     pm10 = obj.list[0].pm10Value
+    cai = obj.list[0].khaiValue
+    o3 = obj.list[0].o3Value
+    no2 = obj.list[0].no2Value
+    so2 = obj.list[0].so2Value
+    co = obj.list[0].coValue
     res.render('aqi/aqi_page')
     res.render('aqi_includes/aqi_info', {title: 'misae', data:data, pm10:pm10})
+    res.render('data_includes/status_graph', {data:data, cai:cai, pm10:pm10, o3:o3, so2:so2, co:co, no2:no2})
   });
 })
 
