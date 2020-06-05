@@ -51,6 +51,10 @@ router.get('/aqi', function(req,res,next){
 module.exports = router; 
 
 
+
+
+// call api for finedust (sido)
+/*
 const key2 = 'g5wuVXrLzJMBI9kR2gmdXm6ltsn0zYEicoOG7g2xNHZnGZVp9v7znsIO45M2l7R6rlE5wiD%2FjtIZupMYvyN2Pg%3D%3D'
 
 const addr4 = 'http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?sidoName='
@@ -60,7 +64,8 @@ const addr6 = '&ver=1.3&_returnType=json'
 var myaddr2 = addr4 + encodeURI('광주') + addr5 + key2 + addr6
 
 
-/* get aqi page */ 
+/* get aqi page */
+/*
 router.get('/aqi', function(req,res,next){
   request(myaddr, function(error, response, body){
     if(error){
@@ -86,3 +91,4 @@ router.get('/aqi', function(req,res,next){
 
 
 module.exports = router; 
+*/
