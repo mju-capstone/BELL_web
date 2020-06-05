@@ -7,16 +7,16 @@
     background-color: #2e73c7;
     background-color: #d17d2e;
     background-color: #ce2121;*/
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 #map_container {
+    width: 100%;
     height: 100vh;
-    width: 60%;
-    float: left;
 }
 
 #info_container {
-    font-family: 'Caveat', cursive;
+    /* font-family: 'Caveat', cursive; */
     height: 100vh;
     width: 40%;
     /*background-image : url("/img/superlative.png");*/
@@ -40,25 +40,25 @@
 h2.date {
     padding: 90px 0px 0px 0px;
     font-size: 40px;
-    font-family: 'Caveat', cursive;
-    text-align: center;
+    /* font-family: 'Caveat', cursive; */
+    /* text-align: center; */
 }
 
 h2.finedust {
-    text-align:center;
+    /* text-align:center; */
 }
 
 h3.con {
-    padding: 10px 0px 0px 320px;
+    /* padding: 10px 0px 0px 320px; */
     font-size: 30px;
-    left: 110px;
-    font-family: 'Caveat', cursive;
+    /* left: 110px; */
+    /* font-family: 'Caveat', cursive; */
 }
 
 h3.state{
     font-size: 35px;
-    font-family: 'Caveat', cursive;
+    /* font-family: 'Caveat', cursive; */
     font-weight: bold ;
     /*color: #0a8bac;*/
-    padding-left: 320px;
+    /* padding-left: 320px; */
 }
