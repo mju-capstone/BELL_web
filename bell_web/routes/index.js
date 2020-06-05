@@ -19,23 +19,44 @@ const addr = 'http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInq
 const addr2 = '&dataTerm=month&pageNo=1&numOfRows=10&ServiceKey=' 
 const addr3 = '&ver=1.3&_returnType=json'
 
-var myaddr = addr + encodeURI('서대문구') + addr2 + key + addr3
+// var myaddr = addr + encodeURI('서대문구') + addr2 + key + addr3
 
 /* get aqi page */
-router.get('/aqi', function(req,res,next){
-  request(myaddr, function(error, response, body){
-    if(error){
-      console.log(error)
-    }
-    var obj = JSON.parse(body)
-    console.log(obj) // 콘솔창에 찍어보기
+// router.get('/aqi', function(req,res,next){
+//   request(myaddr, function(error, response, body){
+//     if(error){
+//       console.log(error)
+//     }
+//     var obj = JSON.parse(body)
+//     console.log(obj) // 콘솔창에 찍어보기
 
-    data = obj.list[0].dataTime
-    pm10 = obj.list[0].pm10Value
-    res.render('aqi/aqi_page')
-    res.render('aqi_includes/aqi_info', {title: 'misae', data:data, pm10:pm10})
-  });
-})
+//     data = obj.list[0].dataTime
+//     pm10 = obj.list[0].pm10Value
+//     res.render('aqi/aqi_page')
+//     res.render('aqi_includes/aqi_info', {title: 'misae', data:data, pm10:pm10})
+//   });
+// })
+
+
+
+router.post('/aqi', function(req, res) {
+  var myaddr = addr + res.send('city : ' + encodeURL(req.body.city)) + addr2 + key + addr3;
+  
+  router.get('/aqi', function(req,res,next){
+    request(myaddr, function(error, response, body){
+      if(error){
+        console.log(error)
+      }
+      var obj = JSON.parse(body)
+      console.log(obj) // 콘솔창에 찍어보기
+
+      data = obj.list[0].dataTime
+      pm10 = obj.list[0].pm10Value
+      res.render('aqi/aqi_page')
+      res.render('aqi_includes/aqi_info', {title: 'misae', data:data, pm10:pm10})
+    });
+  })
+});
 
 
 module.exports = router;
