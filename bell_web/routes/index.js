@@ -44,4 +44,26 @@ router.get('/aqi', function(req,res,next){
 })
 
 
+
+
+router.post('/aqi', function(req, res) {
+  var myaddr = addr + res.send('city : ' + encodeURL(req.body.city)) + addr2 + key + addr3;
+  
+  router.get('/aqi', function(req,res,next){
+    request(myaddr, function(error, response, body){
+      if(error){
+        console.log(error)
+      }
+      var obj = JSON.parse(body)
+      console.log(obj) // 콘솔창에 찍어보기
+
+      data = obj.list[0].dataTime
+      pm10 = obj.list[0].pm10Value
+      res.render('aqi/aqi_page')
+      res.render('aqi_includes/aqi_info', {title: 'misae', data:data, pm10:pm10})
+    });
+  })
+});
+
+
 module.exports = router;
