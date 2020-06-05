@@ -1,12 +1,15 @@
 .search_view
     h1.title="BELL"
-    h6.subtitle="- Searvice for Checking Realtime Finedust -"
+    h3.subtitle="- Service for Checking Realtime Finedust -"
+    br
+    br
 
     form(action='/aqi', method='POST')
         .input-group.search_bar
             input.form-control(type='text', name="city" placeholder="City" aria-label="City" aria-describedby='basic-addon2')
-            .input-group-append
-                button.btn.btn-outline-dark(type='button') SEARCH
+        br
+        .input-group-append
+            button.btn.btn-dark.searchButton(type='button') SEARCH
 
 div#drop.float
     .dropdown

@@ -1,6 +1,6 @@
 // 검색하기 버튼 클릭 이벤트
 $(document).ready(function(){
-    $(".btn-outline-dark").click(function() {
+    $(".searchButton").click(function() {
         window.scrollTo({
             top: 950,
             left: 0,
