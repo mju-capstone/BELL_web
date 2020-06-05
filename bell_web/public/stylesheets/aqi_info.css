@@ -3,6 +3,10 @@
     width: 100%;
     /* background-color: #bec7df; */
     background-color: #d2e2f5;
+    /*background-color: #119e7b;
+    background-color: #2e73c7;
+    background-color: #d17d2e;
+    background-color: #ce2121;*/
 }
 
 #map_container {
@@ -23,15 +27,14 @@
 #img {
     position: relative;
     left:160px;
-    top: -110px;
+    top: -130px;
     float: left;
 
 }
 
 #info{
-    float: left;
-    left: 100px;
-    top: 50px;
+    left: 0px;
+    top: 0px;
 }
 
 h2.date {
@@ -56,6 +59,6 @@ h3.state{
     font-size: 35px;
     font-family: 'Caveat', cursive;
     font-weight: bold ;
-    color: #0a8bac;
+    /*color: #0a8bac;*/
     padding-left: 320px;
 }

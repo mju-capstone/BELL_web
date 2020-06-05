@@ -11,9 +11,38 @@ block content
             h2.finedust Real-time fine dust concentration
 
             div#info
-            br
-            h3.con= pm10 + " ㎍/㎥"
-            h3.state very good
+             //h3.con= sidoName + stationName
+             h3.con= pm10 + " ㎍/㎥"
+             h3.con= pm10Grade1h
+
+             if (pm10Grade1h == 1)
+              h3.state(style={color: '#2e73c7'}) very good
             
+             if (pm10Grade1h == 2)
+              h3.state(style={color: '#119e7b'}) good
+            
+             if (pm10Grade1h == 3)
+              h3.state(style={color: '#d17d2e'}) bad
+               
+             if (pm10Grade1h == 4)
+              h3.state(style={color: '#ce2121'}) very bad
+              
+
+             
+
+
             div#img
-             img.relative(src='img/good2.png' width="130")
+             
+             if (pm10Grade1h == 1)
+               img.relative(src='img/good2.png' width="130")
+       
+             if (pm10Grade1h == 2)
+               img.relative(src='img/soso2.png' width="130")
+
+             if (pm10Grade1h == 3)
+               img.relative(src='img/bad3.png' width="130")
+
+             if (pm10Grade1h == 4)
+               img.relative(src='img/worst2.png' width="130")
+          
+
