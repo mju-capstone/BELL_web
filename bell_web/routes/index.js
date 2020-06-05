@@ -23,6 +23,13 @@ const addr3 = '&ver=1.3&_returnType=json'
 
 var myaddr = addr + encodeURI('서대문구') + addr2 + key + addr3
 
+router.post('/aqi', function(req, res) {
+  var city = res.send(req.body.city)
+  var myaddr = addr + res.send(encodeURL(city)) + addr2 + key + addr3;
+  console.log(myaddr)
+});
+
+
 /* get aqi page */
 router.get('/aqi', function(req,res,next){
   request(myaddr, function(error, response, body){
