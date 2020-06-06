@@ -19,16 +19,7 @@ const addr = 'http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInq
 const addr2 = '&dataTerm=month&pageNo=1&numOfRows=10&ServiceKey=' 
 const addr3 = '&ver=1.3&_returnType=json'
 
-
-
 var myaddr = addr + encodeURI('서대문구') + addr2 + key + addr3
-
-router.post('/aqi', function(req, res) {
-  var city = res.send(req.body.city)
-  var myaddr = addr + res.send(encodeURL(city)) + addr2 + key + addr3;
-  console.log(myaddr)
-});
-
 
 /* get aqi page */
 router.get('/aqi', function(req,res,next){
@@ -54,46 +45,6 @@ router.get('/aqi', function(req,res,next){
   });
 })
 
+
+
 module.exports = router;
-
-
-
-// call api for finedust (sido)
-/*
-const key2 = 'g5wuVXrLzJMBI9kR2gmdXm6ltsn0zYEicoOG7g2xNHZnGZVp9v7znsIO45M2l7R6rlE5wiD%2FjtIZupMYvyN2Pg%3D%3D'
-
-const addr4 = 'http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getCtprvnRltmMesureDnsty?sidoName='
-const addr5 = '&pageNo=1&numOfRows=10&ServiceKey=' 
-const addr6 = '&ver=1.3&_returnType=json'
-
-var myaddr2 = addr4 + encodeURI('광주') + addr5 + key2 + addr6
-
-
-/* get aqi page */
-/*
-router.get('/aqi', function(req,res,next){
-  request(myaddr, function(error, response, body){
-    if(error){
-      console.log(error)
-    }
-    var obj = JSON.parse(body)
-    console.log(obj) 
-
-    pm10_2 = obj.list[0].pm10Value
-    dataTime_2 = obj.list[0].dataTime
-    pm10Grade1h_2 = obj.list[0].pm10Grade1h
-
-    sidoName = obj.list[0].sidoName
-    stationName = obj.list[0].stationName
-    
-    
-  
-    res.render('aqi/aqi_page')
-    res.render('aqi_includes/aqi_info', { sidoName:sidoName, stationName:stationName, pm10_2:pm10_2})
-
-  });
-})
-
-
-module.exports = router; 
-*/
