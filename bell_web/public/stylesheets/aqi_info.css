@@ -2,11 +2,12 @@
     height: 100vh;
     width: 100%;
     /* background-color: #bec7df; */
-    background-color: #d2e2f5;
+    background-color: #ffffff;
     /*background-color: #119e7b;
     background-color: #2e73c7;
-    background-color: #d17d2e;
-    background-color: #ce2121;*/
+    background-color: #dd812a;
+    background-color: #ce2121;
+    background-color: #d2e2f5;*/
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -16,7 +17,7 @@
 }
 
 #info_container {
-    /* font-family: 'Caveat', cursive; */
+    font-family: 'Caveat', cursive;
     height: 100vh;
     width: 40%;
     /*background-image : url("/img/superlative.png");*/
@@ -26,7 +27,7 @@
 
 #img {
     position: relative;
-    left:160px;
+    left:200px;
     top: -130px;
     float: left;
 
@@ -38,27 +39,30 @@
 }
 
 h2.date {
-    padding: 90px 0px 0px 0px;
-    font-size: 40px;
-    /* font-family: 'Caveat', cursive; */
-    /* text-align: center; */
+    padding: 150px 0px 0px 0px;
+    font-size: 36px;
+    /*font-family: 'Caveat', cursive; */
+    text-align: center; 
 }
 
 h2.finedust {
-    /* text-align:center; */
+    padding: 15px 0px 0px 0px;
+    font-size: 35px;
+    font-family: 'Caveat', cursive;
+    text-align: left; 
 }
 
 h3.con {
-    /* padding: 10px 0px 0px 320px; */
+     padding: 10px 0px 0px 400px; 
     font-size: 30px;
-    /* left: 110px; */
     /* font-family: 'Caveat', cursive; */
+    /* left: 110px; */
+    
 }
 
 h3.state{
     font-size: 35px;
     /* font-family: 'Caveat', cursive; */
     font-weight: bold ;
-    /*color: #0a8bac;*/
-    /* padding-left: 320px; */
+    padding-left: 400px; 
 }

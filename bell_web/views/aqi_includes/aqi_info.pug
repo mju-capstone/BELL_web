@@ -4,25 +4,28 @@
       div#map_container
     .col
       br
-      br
-      h2.date=data
       h2.finedust Real-time fine dust concentration
+      h2.date=data
       h3.con #{pm10}  ㎍/㎥
       h3.con pm10 grade : #{pm10Grade1h}
 
       case pm10Grade1h
         when "1" 
           h3.state(style={color: '#2e73c7'}) very good
-          img.relative(src='img/good2.png' width="130")
+          div#img
+            img.relative(src='img/good_blue.png' width="130")
         when "2" 
           h3.state(style={color: '#119e7b'}) good
-          img.relative(src='img/soso2.png' width="130")
+          div#img 
+            img.relative(src='img/soso_green.png' width="130")
         when "3"
           h3.state(style={color: '#d17d2e'}) bad
-          img.relative(src='img/bad3.png' width="130")
+          div#img 
+            img.relative(src='img/bad_orange.png' width="130")
         when "4"
           h3.state(style={color: '#ce2121'}) very bad
-          img.relative(src='img/worst2.png' width="130")
+          div#img 
+            img.relative(src='img/worst_red.png' width="130")
 
 
 //- extends ../layout
