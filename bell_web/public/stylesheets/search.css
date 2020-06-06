@@ -17,14 +17,11 @@ h1.title {
     padding: 150px 0px 0px 150px;
     font-size: 50px;
     font-family: 'Caveat', cursive;
-    /* font-family: 'Nunito Sans', sans-serif; */
     color: white;
 }
 
 h3.subtitle {
     padding: 0px 0px 10px 150px;
-    /* font-size: large; */
-    /* font-family: 'Nunito Sans', sans-serif; */
     color: white;
     font-family: 'Caveat', cursive;
 }

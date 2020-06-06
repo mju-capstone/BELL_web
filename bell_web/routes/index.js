@@ -44,9 +44,9 @@ router.get('/aqi', function(req,res,next){
     coGrade = obj.list[0].coGrade
     o3Grade = obj.list[0].o3Grade
     no2Grade = obj.list[0].no2Grade
-    res.render('aqi/aqi_page')
-    res.render('aqi_includes/aqi_info', {title: 'misae', data:data, pm10:pm10, pm10Grade1h:pm10Grade1h, pm10Grade:pm10Grade})
-    res.render('data_includes/status_graph', {data:data, cai:cai, pm10:pm10, o3:o3, so2:so2, co:co, no2:no2, caiGrade:caiGrade, pm10Grade1h:pm10Grade1h, so2Grade:so2Grade, coGrade:coGrade, o3Grade:o3Grade, no2Grade:no2Grade})
+    // res.render('aqi/aqi_page')
+    
+    res.render('aqi/aqi_page', {data:data, cai:cai, pm10:pm10, o3:o3, so2:so2, co:co, no2:no2, caiGrade:caiGrade, pm10Grade1h:pm10Grade1h, so2Grade:so2Grade, coGrade:coGrade, o3Grade:o3Grade, no2Grade:no2Grade})
   });
 })
 
