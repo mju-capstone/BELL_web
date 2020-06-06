@@ -16,28 +16,30 @@
 h1.title {
     padding: 150px 0px 0px 150px;
     font-size: 50px;
-    /* font-family: 'Caveat', cursive; */
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Caveat', cursive;
+    /* font-family: 'Nunito Sans', sans-serif; */
     color: white;
 }
 
 h3.subtitle {
     padding: 0px 0px 10px 150px;
     /* font-size: large; */
-    font-family: 'Nunito Sans', sans-serif;
+    /* font-family: 'Nunito Sans', sans-serif; */
     color: white;
-    /* font-family: 'Caveat', cursive; */
+    font-family: 'Caveat', cursive;
 }
 
 /* 검색하기 버튼 */
 button.searchButton {
+    bottom: 30px;
     left: 150px;
     width: 150px;
     background-color: black;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Caveat', cursive;
 }
 
 .input-group.search_bar {
+    bottom: 30px;
     width: 600px;
     padding: 0px 0px 0px 150px;
 }
