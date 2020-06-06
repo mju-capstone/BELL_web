@@ -17,19 +17,31 @@
                             | 통합대기지수
                     th(scope='col')
                         span
+                            | Grade
+                    th(scope='col')
+                        span
                             | PM10
                             br
                             | 미세먼지
                     th(scope='col')
                         span
+                            | Grade
+                    th(scope='col')
+                        span
                             | O3
                             br
                             | 오존
+                    th(scope='col')
+                        span
+                            | Grade
                 tbody
                     tr
                     td.con=cai
+                    td.con=caiGrade
                     td.con=pm10
+                    td.con=pm10Grade1h
                     td.con=o3
+                    td.con=o3Grade
                 thead
                     tr
                     th(scope='col')
@@ -39,22 +51,36 @@
                             | 아황산가스
                     th(scope='col')
                         span
+                            | Grade
+                    th(scope='col')
+                        span
                             | CO
                             br
                             | 일산화탄소
                     th(scope='col')
                         span
+                            | Grade
+                    th(scope='col')
+                        span
                             | NO2
                             br
                             | 이산화질소
+                    th(scope='col')
+                        span
+                            | Grade
                 tbody
                     tr
                     td.con=so2
+                    td.con=so2Grade
                     td.con=co
+                    td.con=coGrade
                     td.con=no2
+                    td.con=no2Grade
 
             p.date=data + " 기준"
-
+            br
+            br
+            img.relative(src='img/grade.png' width='740')
 
 
 

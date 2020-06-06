@@ -47,6 +47,7 @@ button.searchButton {
 *{padding:0;margin:0;}
 
 div#drop{
+    z-index: 2;
     font-family: 'Caveat', cursive;
     font-size: 30px;
 	position:fixed;
@@ -71,6 +72,7 @@ div#drop{
 }
 
 div#top{
+    z-index: 2;
     font-family: 'Caveat', cursive;
     font-size: 30px;
 	position:fixed;
@@ -78,14 +80,10 @@ div#top{
 	height:60px;
 	bottom:65px;
 	left:70px;
-	background-color:rgb(115, 143, 167);
+	background-color: whitesmoke;
     border-radius:50px;
 	text-align:center;
     box-shadow: 2px 2px 3px #999;
     padding-top: 8px;
     padding-right: 4px;
-}
-
-#top.float{
-    color: white;
 }
