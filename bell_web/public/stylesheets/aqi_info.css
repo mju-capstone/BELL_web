@@ -1,5 +1,5 @@
 .info_view {
-    height: 100vh;
+    height: 98vh;
     width: 100%;
     /* background-color: #bec7df; */
     background-color: #ffffff;
@@ -12,7 +12,7 @@
 }
 
 #map_container {
-    width: 100%;
+    width: 98%;
     height: 100vh;
 }
 

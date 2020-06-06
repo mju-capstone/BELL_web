@@ -2,7 +2,7 @@
 $(document).ready(function(){
     $(".searchButton").click(function() {
         window.scrollTo({
-            top: 950,
+            top: 770,
             left: 0,
             behavior: 'smooth'
           });
