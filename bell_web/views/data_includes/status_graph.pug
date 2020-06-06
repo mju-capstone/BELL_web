@@ -1,10 +1,10 @@
 .info_view
-    br
-    br
     .row
-        .col 
-            canvas(id='status_graph', width='300', height='300')
-        .col
+        .col.graph_view
+            h1="Status Graph"
+            br 
+            canvas(id='status_graph', width='700', height='400')
+        .col.content
             br
             h3="대기오염 정보"
             table.table.table-striped

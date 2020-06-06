@@ -1,7 +1,19 @@
 .china_seoul_view {
-    height: 980px;
-    width: 100%;
-    padding: 50px;
-    background-color: pink;
-    font-family: 'Caveat', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 20px;
+    font-weight: bolder;
+}
+.content {
+    padding-top: 20px;
+}
+h1{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+canvas{
+    padding-left: 50px;
+}
+h3{
+    font-family: 'Nanum Gothic Coding', monospace;
 }

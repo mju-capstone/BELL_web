@@ -1,11 +1,14 @@
 .graph_view {
-    background-color: mediumaquamarine;
-    font-family: 'Caveat', cursive;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-top: 20px;
+    font-weight: bolder;
     /* height: 100vh; */
     /* width: 60%; */
     /* float: left;   */
 }
-
+.content {
+    padding-top: 20px;
+}
 #info_container {
     font-family: 'Caveat', cursive;
     /* height: 100vh; */
@@ -18,11 +21,11 @@
 
 h1{
     padding-left: 50px;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
 canvas{
-    padding: 10px;
+    padding-left: 50px;
 }
 
 .table{
