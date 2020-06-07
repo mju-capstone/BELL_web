@@ -11,7 +11,7 @@
     font-family: 'Nunito Sans', sans-serif;
 }
 
-#map_container {
+#map_container, #map2 {
     width: 98%;
     height: 100vh;
 }

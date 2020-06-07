@@ -68,7 +68,7 @@ function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.open(map);
   }
 
-// 지도 설정
+// MARK : 지도 설정
 function initialize() {
 
     // default map
@@ -113,6 +113,22 @@ function initialize() {
     //     animation:google.maps.Animation.BOUNCE
     // });
     // marker.setMap(map);
+
+
+    var  map2  =  new  google.maps.Map(document.getElementById('map2'),  {  
+        center:  new  google.maps.LatLng(51.505,  -0.09),  
+        mapTypeId:  google.maps.MapTypeId.ROADMAP,  
+        zoom:  11  
+    });  
+
+    var  t  =  new  Date().getTime();  
+    var  waqiMapOverlay  =  new  google.maps.ImageMapType({  
+        getTileUrl:  function(coord,  zoom)  {  
+            return  'https://tiles.aqicn.org/tiles/usepa-aqi/'  +  zoom  +  "/"  +  coord.x  +  "/"  +  coord.y  +  ".png?token=42449a98a32888268828e3059c4489aef7625391";  
+        },  
+        name:  "Air  Quality",  
+    });  
+    map2.overlayMapTypes.insertAt(0,waqiMapOverlay);  
 
 }
 
