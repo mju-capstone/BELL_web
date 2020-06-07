@@ -13,7 +13,54 @@ h1{
 
 canvas{
     padding-left: 50px;
+    padding-top: 50px;
 }
 h3{
     font-family: 'Nanum Gothic Coding', monospace;
+}
+button.year18Button {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: large;
+    width: 64px;
+    margin: 15px 10px;
+    padding-left: 10px;
+}
+button.year19Button {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: large;
+    width: 64px;
+    margin: 15px 10px;
+    padding-left: 10px;
+}
+button.year20Button {
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: large;
+    width: 64px;
+    margin: 15px 10px;
+    padding-left: 10px;
+}
+.name {
+    float: left;
+}
+.buttons {
+    float: left;
+}
+div.buttons {
+    padding-left: 150px;
+}
+.graph {
+    float: left;
+    position: relative;
+}
+.year19 {
+    display: none;
+}
+.year20 {
+    display: none;
 }
