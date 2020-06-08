@@ -6,10 +6,10 @@
 
     form(action='/aqi', method='POST')
         .input-group.search_bar
-            input.form-control(type='text', name="city" placeholder="City" aria-label="City" aria-describedby='basic-addon2')
+            input.form-control(type='text', name="city" placeholder="City" aria-label="City" aria-describedby='basic-addon2', value="대구광역시 북구 침산로 158")
         br
         .input-group-append
-            button.btn.btn-dark.searchButton(type='button') SEARCH
+            button.btn.btn-dark.searchButton(type='button', value='Geocode') SEARCH
 
 div#drop.float
     .dropdown
