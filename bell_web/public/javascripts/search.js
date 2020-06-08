@@ -60,13 +60,7 @@ $(document).ready(function(){
     });          
 });
 
-function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-    infoWindow.setPosition(pos);
-    infoWindow.setContent(browserHasGeolocation ?
-                          'Error: The Geolocation service failed.' :
-                          'Error: Your browser doesn\'t support geolocation.');
-    infoWindow.open(map);
-  }
+
 
 // MARK : 지도 설정
 function initialize() {
@@ -131,5 +125,123 @@ function initialize() {
     map2.overlayMapTypes.insertAt(0,waqiMapOverlay);  
 
 }
+
+
+
+// function initialize() {
+//     console.log('Map is initialized.');
+//     var map = new google.maps.Map(document.getElementById('map_container'), {
+//         zoom : 12,
+//         center: {
+//             lat: -34.397,
+//             lng: 150.644
+//         }
+//     });
+
+//     var geocoder = new google.maps.Geocoder();
+
+//     document.getElementsByClassName('btn btn-dark searchButton').addEventListener('click', function() {
+//         console.log('submit 버튼 클릭 이벤트 실행');
+
+//         geocodeAddress(geocoder, map);
+//     });
+
+//     function geocodeAddress(geocoder, resultMap) {
+//         console.log('geocodeAddress 함수 실행');
+
+//         var address = document.getElementsByClassName('form-control').value;
+
+//         geocoder.geocode({'address' : address}, function(result, status) {
+//             console.log(result);
+//             console.log(status);
+
+//             if (status === 'OK') {
+//                 resultMap.setCenter(result[0].geometry.location);
+//                 resultMap.setZoom(18);
+                
+//                 var marker = new google.maps.Marker({
+//                     map: resultMap,
+//                     position: result[0].geometry.location
+//                 });
+
+//                 console.log('위도(latitude) : ' + marker.position.lat());
+//                 console.log('경도(longitude) : ' + marker.position.lng());
+//             } else {
+//                 alert('지오코드가 다음의 이유로 성공하지 못했습니다 : ' + status);
+//             }
+//         });
+//     }
+// }
+
+
+// function initialize() {
+//     var map = new google.maps.Map(document.getElementById('map_countainer'), {
+//       center: {lat: -33.8688, lng: 151.2195},
+//       zoom: 13,
+//       mapTypeId: 'roadmap'
+//     });
+
+//     // Create the search box and link it to the UI element.
+//     var input = document.getElementsByClassName('form-control');
+//     var searchBox = new google.maps.places.SearchBox(input);
+//     map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+//     // Bias the SearchBox results towards current map's viewport.
+//     map.addListener('bounds_changed', function() {
+//       searchBox.setBounds(map.getBounds());
+//     });
+
+//     var markers = [];
+//     // Listen for the event fired when the user selects a prediction and retrieve
+//     // more details for that place.
+//     searchBox.addListener('places_changed', function() {
+//       var places = searchBox.getPlaces();
+
+//       if (places.length == 0) {
+//         return;
+//       }
+
+//       // Clear out the old markers.
+//       markers.forEach(function(marker) {
+//         marker.setMap(null);
+//       });
+//       markers = [];
+
+//       // For each place, get the icon, name and location.
+//       var bounds = new google.maps.LatLngBounds();
+//       places.forEach(function(place) {
+//         if (!place.geometry) {
+//           console.log("Returned place contains no geometry");
+//           return;
+//         }
+//         var icon = {
+//           url: place.icon,
+//           size: new google.maps.Size(71, 71),
+//           origin: new google.maps.Point(0, 0),
+//           anchor: new google.maps.Point(17, 34),
+//           scaledSize: new google.maps.Size(25, 25)
+//         };
+
+//         // Create a marker for each place.
+//         markers.push(new google.maps.Marker({
+//           map: map,
+//           icon: icon,
+//           title: place.name,
+//           position: place.geometry.location
+//         }));
+
+//         if (place.geometry.viewport) {
+//           // Only geocodes have viewport.
+//           bounds.union(place.geometry.viewport);
+//         } else {
+//           bounds.extend(place.geometry.location);
+//         }
+//       });
+//       map.fitBounds(bounds);
+//     });
+//   }
+    
+
+
 
 google.maps.event.addDomListener(window, 'load', initialize);
