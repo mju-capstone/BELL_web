@@ -3,40 +3,221 @@
     .col
       div#map_container
       #map
-
     .col
       br
       h2.finedust Real-time fine dust concentration
-      div#finedust_info 
-        div#info_bg
-         h2.date=data
-         h3.con #{pm10}  ㎍/㎥
-         h3.con pm10 grade : #{pm10Grade1h}
 
-          case pm10Grade1h
-           when "1" 
-            h3.state(style={color: '#2e73c7'}) very good
-             div#img
-              img.relative(src='img/good_blue.png' width="130")
-           when "2" 
-            h3.state(style={color: '#119e7b'}) good
-             div#img 
-              img.relative(src='img/soso_green.png' width="130")
-           when "3"
-            h3.state(style={color: '#d17d2e'}) bad
-             div#img 
-              img.relative(src='img/bad_orange.png' width="130")
-           when "4"
-            h3.state(style={color: '#ce2121'}) very bad
-             div#img 
-              img.relative(src='img/worst_red.png' width="130")
+      case pm10Grade1h
+       when "1" 
+        div#info_con 
+         div#finedust_info        
+          h2.f_info 정보 
+         div#info_bg1
+          h2.date=data
+          h2.infotitle 실시간 미세먼지(pm10) 농도
+          h3.con #{pm10}  ㎍/㎥
+          h3.cong pm10 grade : #{pm10Grade1h}
+          h3.state
+           h3.state1(style={color: '#2e73c7'}) very good
+           div#img
+             img.relative(src='img/good_blue.png' width="125")
+           div#img2  
+             img.relative(src='img/info_line.png' width="260")    
+           div.buttons
+            button.btn.btn-outline-dark.pm10Button1(type='button') pm10 
+            case pm25Grade1h
+             when "1"
+              button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#2e73c7'}) very good
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#2e73c7'}) very good
+             when "2"
+              button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#2e73c7'}) very good
+              h3.pm25_text 초미세먼지
+              h3.pm25_text #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#119e7b'}) good
+             when "3"
+              button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#2e73c7'}) very good
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#d17d2e'}) bad
+             when "4"  
+              button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#2e73c7'}) very good
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#ce2121'}) very bad
 
+       when "2" 
+        div#info_con 
+         div#finedust_info        
+          h2.f_info 정보 
+         div#info_bg2
+          h2.date=data
+          h2.infotitle 실시간 미세먼지(pm10) 농도
+          h3.con #{pm10}  ㎍/㎥
+          h3.cong pm10 grade : #{pm10Grade1h}
+          h3.state(style={color: '#119e7b'}) good
+           div#img
+             img.relative(src='img/soso_green.png' width="125") 
+           div#img2  
+             img.relative(src='img/info_line.png' width="260")    
+           div.buttons
+            button.btn.btn-outline-dark.pm10Button2(type='button') pm10 
+            case pm25Grade1h
+             when "1"
+              button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#119e7b'}) good
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#2e73c7'}) very good
+             when "2"
+              button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#119e7b'}) good
+              h3.pm25_text 초미세먼지
+              h3.pm25_text #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#119e7b'}) good
+             when "3"
+              button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#119e7b'}) good
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#d17d2e'}) bad
+             when "4"  
+              button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#119e7b'}) good
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#ce2121'}) very bad
+              
+       when "3" 
+        div#info_con 
+         div#finedust_info        
+          h2.f_info 정보 
+         div#info_bg3
+          h2.date=data
+          h2.infotitle 실시간 미세먼지(pm10) 농도
+          h3.con #{pm10}  ㎍/㎥
+          h3.cong pm10 grade : #{pm10Grade1h}
+          h3.state
+           h3.state2(style={color: '#d17d2e'}) bad
+           div#img
+             img.relative(src='img/bad_orange.png' width="125")
+           div#img2  
+             img.relative(src='img/info_line.png' width="260")    
+           div.buttons
+            button.btn.btn-outline-dark.pm10Button3(type='button') pm10 
+            case pm25Grade1h
+             when "1"
+              button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#d17d2e'}) bad
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#2e73c7'}) very good
+             when "2"
+              button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#d17d2e'}) bad
+              h3.pm25_text 초미세먼지
+              h3.pm25_text #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#119e7b'}) good
+             when "3"
+              button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#d17d2e'}) bad
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#d17d2e'}) bad
+             when "4"  
+              button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#d17d2e'}) bad
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#ce2121'}) very bad
+
+       when "4" 
+        div#info_con 
+         div#finedust_info        
+          h2.f_info 정보 
+         div#info_bg4
+          h2.date=data
+          h2.infotitle 실시간 미세먼지(pm10) 농도
+          h3.con #{pm10}  ㎍/㎥
+          h3.cong pm10 grade : #{pm10Grade1h}
+          h3.state
+           h3.state1(style={color: '#ce2121'}) very bad
+           div#img
+             img.relative(src='img/worst_red.png' width="130")
+           div#img2  
+             img.relative(src='img/info_line.png' width="260")    
+           div.buttons
+            button.btn.btn-outline-dark.pm10Button4(type='button') pm10 
+            case pm25Grade1h
+             when "1"
+              button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#ce2121'}) very bad
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#2e73c7'}) very good
+             when "2"
+              button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#ce2121'}) very bad
+              h3.pm25_text 초미세먼지
+              h3.pm25_text #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#119e7b'}) good
+             when "3"
+              button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#ce2121'}) very bad
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#d17d2e'}) bad
+             when "4"  
+              button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
+              h3.pm10_text 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#ce2121'}) very bad
+              h3.pm25_text 초미세먼지
+              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_gra(style={color: '#ce2121'}) very bad
+       
+
+
+
+     
    
      
-    
-          
-            
- 
+        
 
 //- extends ../layout
 
