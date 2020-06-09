@@ -62,69 +62,57 @@ $(document).ready(function(){
 
 
 
-// MARK : 지도 설정
-// function initialize() {
+ // MARK : 지도 설정
+ function initialize() {
 
-//     // default map
-//     map = new google.maps.Map(document.getElementById('map_container'), {
-//         center: {lat: -34.397, lng: 150.644},
-//         zoom: 15
-//     });
-//     infoWindow = new google.maps.InfoWindow;
+    //  default map
+     map = new google.maps.Map(document.getElementById('map_container'), {
+         center: {lat: -34.397, lng: 150.644},
+         zoom: 15
+     });
+     infoWindow = new google.maps.InfoWindow;
 
-//     // get my location
-//     if (navigator.geolocation) {
-//         navigator.geolocation.getCurrentPosition(function(position) {
-//           var pos = {
-//             lat: position.coords.latitude,
-//             lng: position.coords.longitude
-//         };
-//         var marker = new google.maps.Marker({
-//             position : pos,
-//             animation : google.maps.Animation.BOUNCE
-//         });
-//         marker.setMap(map);
+    //  get my location
+     if (navigator.geolocation) {
+         navigator.geolocation.getCurrentPosition(function(position) {
+           var pos = {
+             lat: position.coords.latitude,
+             lng: position.coords.longitude
+         };
+         var marker = new google.maps.Marker({
+             position : pos,
+             animation : google.maps.Animation.BOUNCE
+         });
+         marker.setMap(map);
 
-//         infoWindow.open(map);
-//         map.setCenter(pos);
-//     }, function() {
-//         handleLocationError(true, infoWindow, map.getCenter());
-//         });
-//     } else {
-//         // Browser doesn't support Geolocation
-//         handleLocationError(false, infoWindow, map.getCenter());
-//     }
-
-//     // var mapProp = {
-//     //   center: new google.maps.LatLng(37.580468, 126.923456),
-//     //   zoom:15,
-//     //   mapTypeId:google.maps.MapTypeId.ROADMAP
-//     // };
-//     // var map=new google.maps.Map(document.getElementById("map_container"),mapProp); 
-    
-//     // var marker = new google.maps.Marker({
-//     //     position:{lat: 37.580468, lng: 126.923456},
-//     //     animation:google.maps.Animation.BOUNCE
-//     // });
-//     // marker.setMap(map);
+         infoWindow.open(map);
+         map.setCenter(pos);
+     }, function() {
+         handleLocationError(true, infoWindow, map.getCenter());
+         });
+     } else {
+    //      Browser doesn't support Geolocation
+         handleLocationError(false, infoWindow, map.getCenter());
+     }
 
 
-//     var  map2  =  new  google.maps.Map(document.getElementById('map2'),  {  
-//         center:  new  google.maps.LatLng(51.505,  -0.09),  
-//         mapTypeId:  google.maps.MapTypeId.ROADMAP,  
-//         zoom:  11  
-//     });  
 
-//     var  t  =  new  Date().getTime();  
-//     var  waqiMapOverlay  =  new  google.maps.ImageMapType({  
-//         getTileUrl:  function(coord,  zoom)  {  
-//             return  'https://tiles.aqicn.org/tiles/usepa-aqi/'  +  zoom  +  "/"  +  coord.x  +  "/"  +  coord.y  +  ".png?token=42449a98a32888268828e3059c4489aef7625391";  
-//         },  
-//         name:  "Air  Quality",  
-//     });  
-//     map2.overlayMapTypes.insertAt(0,waqiMapOverlay);  
+     var  map2  =  new  google.maps.Map(document.getElementById('map2'),  {  
+         center:  new  google.maps.LatLng(51.505,  -0.09),  
+         mapTypeId:  google.maps.MapTypeId.ROADMAP,  
+         zoom:  11  
+     });  
 
-// }
+     var  t  =  new  Date().getTime();  
+     var  waqiMapOverlay  =  new  google.maps.ImageMapType({  
+         getTileUrl:  function(coord,  zoom)  {  
+             return  'https://tiles.aqicn.org/tiles/usepa-aqi/'  +  zoom  +  "/"  +  coord.x  +  "/"  +  coord.y  +  ".png?token=42449a98a32888268828e3059c4489aef7625391";  
+         },  
+         name:  "Air  Quality",  
+     });  
+     map2.overlayMapTypes.insertAt(0,waqiMapOverlay);  
+
+ }
 
 
 

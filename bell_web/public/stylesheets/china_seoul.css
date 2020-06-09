@@ -19,7 +19,7 @@ h3{
     font-family: 'Nanum Gothic Coding', monospace;
 }
 button.year18Button {
-    background-color: rgb405, 255, 255);
+    background-color: rgb(405, 255, 255);
     text-align: center;
     font-family: 'Caveat', cursive;
     font-size: large;
@@ -63,102 +63,38 @@ div.buttons {
 .year20 {
     display: none;
 }
-/*
-.item-1, 
-.item-2, 
-.item-3 {
-    top: 630px;
-    position: absolute;
-    bottom: 0px;
-    display: block;
-	animation-duration: 20s;
-	animation-timing-function: ease-in-out;
-	animation-iteration-count: infinite;
-}
-
-.item-1{
-	animation-name: anim-1;
-}
-
-.item-2{
-	animation-name: anim-2;
-}
-
-.item-3{
-	animation-name: anim-3;
-}
-
-@keyframes anim-1 {
-	0%, 8.3% { left: -55%; opacity: 0; }
-  8.3%,25% { left: 40%; opacity: 1; }
-  33.33%, 100% { left: 90%; opacity: 0; }
-}
-
-@keyframes anim-2 {
-	0%, 33.33% { left: -55%; opacity: 0; }
-  41.63%, 58.29% { left:40%; opacity: 1; }
-  66.66%, 100% { left: 90%; opacity: 0; }
-}
-
-@keyframes anim-3 {
-	0%, 66.66% { left: -55%; opacity: 0; }
-  74.96%, 91.62% { left:40%; opacity: 1; }
-  100% { left: 90%; opacity: 0; }
-}
-.slider_title {
-    margin-top: 40px;
-    margin-left: 170px;
-}*/
-
-.animated-title {
-    font-size: 12px;
-    margin-left: 200px;
-    margin-top: 50px;
-}
-.animated-text{
-    color: rgb(0, 0, 0);
-    position: absolute;
-    top: 90%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-    padding: 0 0;
-    height: 60px;
-    overflow: hidden;
-
-  }
   
-  .line{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 12px;
-    line-height: 60px;
-  }
-  
-  .line:first-child{
-    animation: anim 12s infinite;
-  }
-  
-  @keyframes anim {
-    0%{
-      margin-top : 0;
-    }
-    16%{
-      margin-top : -60px;
-    }
-    33%{
-      margin-top : -120px;
-    }
-    50%{
-      margin-top : -180px;
-    }
-    66%{
-      margin-top : -120px;
-    }
-    82%{
-      margin-top : -60px;
-    }
-    100%{
-      margin-top : 0;
-    }
-  }
-  
+#map2 {
+    height: 87%;
+}
+
+.slide-title{
+  font-family: 'Nanum Gothic Coding', monospace;
+  margin-left: 24%;
+  margin-top: 30px;
+  font-size: 15px;
+}
+.slide {
+  font-family: 'Nanum Gothic Coding', monospace;
+  margin-left: 36%;
+  margin-top: -5%;
+  font-size: 15px;
+}
+ul,li{list-style:none;}
+  .slide{height:30px;overflow:hidden;}
+  .slide ul{height:calc(100% * 10);animation:slide 30s infinite;}
+  .slide li{height:calc(100% / 10);}
+
+@keyframes slide {
+      0% {margin-top:0;}
+      10% {margin-top:-30px;}
+      20% {margin-top:-60px;}
+      30% {margin-top:-90px;}
+      40% {margin-top:-120px;}
+      50% {margin-top:-150px;}
+      60% {margin-top:-180px;}
+      70% {margin-top:-210px;}
+      80% {margin-top:-240px;}
+      90% {margin-top:-270px;}
+      100% {margin-top:0;}
+}
