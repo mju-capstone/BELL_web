@@ -91,22 +91,10 @@ $(document).ready(function(){
          handleLocationError(true, infoWindow, map.getCenter());
          });
      } else {
-         // Browser doesn't support Geolocation
+    //      Browser doesn't support Geolocation
          handleLocationError(false, infoWindow, map.getCenter());
      }
 
-     /* var mapProp = {
-        center: new google.maps.LatLng(37.580468, 126.923456),
-        zoom:15,
-        mapTypeId:google.maps.MapTypeId.ROADMAP
-      };
-      var map=new google.maps.Map(document.getElementById("map_container"),mapProp); 
-    
-      var marker = new google.maps.Marker({
-          position:{lat: 37.580468, lng: 126.923456},
-          animation:google.maps.Animation.BOUNCE
-      });
-      marker.setMap(map); */
 
 
      var  map2  =  new  google.maps.Map(document.getElementById('map2'),  {  
@@ -123,6 +111,8 @@ $(document).ready(function(){
          name:  "Air  Quality",  
      });  
      map2.overlayMapTypes.insertAt(0,waqiMapOverlay);  
+
+ }
 
  }
 
