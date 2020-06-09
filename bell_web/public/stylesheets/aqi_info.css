@@ -11,6 +11,10 @@
     height: 100vh;
 }
 
+#map {
+    height: 100%
+}
+
 #info_container {
     font-family: 'Caveat', cursive;
     height: 100vh;
