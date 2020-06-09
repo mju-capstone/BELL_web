@@ -45,43 +45,58 @@ html, body {
 
 #img {
     position: relative;
-    left:200px;
-    top: -130px;
+    left:0px;
+    top: -400px;
     float: left;
 
 }
-/*#info_bg {
-    background-color: #96fa8d;
-}*/
 
-#info{
-    left: 0px;
-    top: 0px;
+
+#info_bg {
+    padding: 200px 0px 0px 0px;
+    background-color: #e4f0ed;
+    height: 635px;
+    width: 45%;
+
+}
+#finedust_info {
+    background-color: #348873;
+    height: 600px;
+
 }
 
+h2.f_info {
+    left:0px;
+    top: -400px;
+    font-size: 30px; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
 h2.date {
-    padding: 150px 0px 0px 0px;
+    /*padding: 150px 0px 0px 0px;*/
     font-size: 30px;
-    text-align: center; 
+    text-align: lefts; 
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h3.con {
+    /*padding: 10px 0px 0px 400px; */
+    font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2.finedust {
-    padding: 15px 0px 0px 0px;
+    padding: 15px 0px 30px 0px;
     font-size: 35px;
     font-family: 'Caveat', cursive;
     text-align: left; 
 }
 
-h3.con {
-    padding: 10px 0px 0px 400px; 
-    font-size: 20px;
-    font-family: 'Source Sans Pro', sans-serif;
-}
 
 h3.state{
     font-size: 30px;
     font-weight: bold ;
-    padding-left: 400px; 
+    padding-left: 100px; 
     font-family: 'Source Sans Pro', sans-serif;
 }
