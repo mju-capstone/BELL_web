@@ -4,10 +4,11 @@
       div#map_container
     .col
       br
-      h2.finedust Real-time fine dust concentration
-      h2.date=data
-      h3.con #{pm10}  ㎍/㎥
-      h3.con pm10 grade : #{pm10Grade1h}
+      div#info_bg
+       h2.finedust Real-time fine dust concentration
+       h2.date=data
+       h3.con #{pm10}  ㎍/㎥
+       h3.con pm10 grade : #{pm10Grade1h}
 
       case pm10Grade1h
         when "1" 

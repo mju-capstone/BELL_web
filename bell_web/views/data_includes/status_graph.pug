@@ -36,12 +36,48 @@
                             | Grade
                 tbody
                     tr
-                    td.con=cai
-                    td.con=caiGrade
-                    td.con=pm10
-                    td.con=pm10Grade1h
-                    td.con=o3
-                    td.con=o3Grade
+                    // cai 
+                    if (caiGrade == 1)
+                       td.cai(style={color: '#2e73c7'}) #{cai}
+                       td.caig(style={color: '#2e73c7'}) #{caiGrade}
+                    if (caiGrade == 2)
+                       td.cai(style={color: '#119e7b'}) #{cai}
+                       td.caig(style={color: '#119e7b'}) #{caiGrade}
+                    if (caiGrade == 3)
+                       td.cai(style={color: '#d17d2e'}) #{cai}
+                       td.caig(style={color: '#d17d2e'}) #{caiGrade}
+                    if (caiGrade == 4)
+                       td.cai(style={color: '#ce2121'}) #{cai}
+                       td.caig(style={color: '#ce2121'}) #{caiGrade}
+                    
+                    //pm10   
+                    if (pm10Grade1h == 1)
+                       td.pm10(style={color: '#2e73c7'}) #{pm10}
+                       td.pm10g(style={color: '#2e73c7'}) #{pm10Grade1h}
+                    if (pm10Grade1h == 2)
+                       td.pm10(style={color: '#119e7b'}) #{pm10}
+                       td.pm10g(style={color: '#119e7b'}) #{pm10Grade1h}
+                    if (pm10Grade1h == 3)
+                       td.pm10(style={color: '#d17d2e'}) #{pm10}
+                       td.pm10g(style={color: '#d17d2e'}) #{pm10Grade1h}
+                    if (pm10Grade1h == 4)
+                       td.pm10(style={color: '#ce2121'}) #{pm10}
+                       td.pm10g(style={color: '#ce2121'}) #{pm10Grade1h}
+
+                    //o3        
+                    if (o3Grade == 1)
+                       td.o3(style={color: '#2e73c7'}) #{o3}
+                       td.o3g(style={color: '#2e73c7'}) #{o3Grade}
+                    if (o3Grade == 2)
+                       td.o3(style={color: '#119e7b'}) #{o3}
+                       td.o3g(style={color: '#119e7b'}) #{o3Grade}
+                    if (o3Grade == 3)
+                       td.o3(style={color: '#d17d2e'}) #{o3}
+                       td.o3g(style={color: '#d17d2e'}) #{o3Grade}
+                    if (o3Grade == 4)
+                       td.o3(style={color: '#ce2121'}) #{o3}
+                       td.so3g(style={color: '#ce2121'}) #{o3Grade}
+
                 thead
                     tr
                     th(scope='col')
@@ -70,18 +106,52 @@
                             | Grade
                 tbody
                     tr
-                    td.con=so2
-                    td.con=so2Grade
-                    td.con=co
-                    td.con=coGrade
-                    td.con=no2
-                    td.con=no2Grade
+                    //so2
+                    if (so2Grade == 1)
+                       td.so2(style={color: '#2e73c7'}) #{so2}
+                       td.so2g(style={color: '#2e73c7'}) #{so2Grade}
+                    if (so2Grade == 2)
+                       td.so2(style={color: '#119e7b'}) #{so2}
+                       td.so2g(style={color: '#119e7b'}) #{so2Grade}
+                    if (so2Grade == 3)
+                       td.so2(style={color: '#d17d2e'}) #{so2}
+                       td.so2g(style={color: '#d17d2e'}) #{so2Grade}
+                    if (so2Grade == 4)
+                       td.so2(style={color: '#ce2121'}) #{so2}
+                       td.so2g(style={color: '#ce2121'}) #{so2Grade}
+                    
+                    //co
+                    if (coGrade == 1)
+                       td.co(style={color: '#2e73c7'}) #{co}
+                       td.cog(style={color: '#2e73c7'}) #{coGrade}
+                    if (coGrade == 2)
+                       td.co(style={color: '#119e7b'}) #{co}
+                       td.cog(style={color: '#119e7b'}) #{coGrade}
+                    if (coGrade == 3)
+                       td.co(style={color: '#d17d2e'}) #{co}
+                       td.cog(style={color: '#d17d2e'}) #{coGrade}
+                    if (so2Grade == 4)
+                       td.co(style={color: '#ce2121'}) #{co}
+                       td.cog(style={color: '#ce2121'}) #{coGrade}
+                    
+                    //no2   
+                    if (no2Grade == 1)
+                       td.no2(style={color: '#2e73c7'}) #{no2}
+                       td.no2g(style={color: '#2e73c7'}) #{no2Grade}
+                    if (no2Grade == 2)
+                       td.no2(style={color: '#119e7b'}) #{no2}
+                       td.no2g(style={color: '#119e7b'}) #{no2Grade}
+                    if (no2Grade == 3)
+                       td.no2(style={color: '#d17d2e'}) #{no2}
+                       td.no2g(style={color: '#d17d2e'}) #{no2Grade}
+                    if (no2Grade == 4)
+                       td.no2(style={color: '#ce2121'}) #{no2}
+                       td.no2g(style={color: '#ce2121'}) #{no2Grade}
 
             p.date=data + " 기준"
             br
             br
             img.relative(src='img/grade.png' width='740')
-
 
 
 

@@ -3,11 +3,6 @@
     width: 100%;
     /* background-color: #bec7df; */
     background-color: #ffffff;
-    /*background-color: #119e7b;
-    background-color: #2e73c7;
-    background-color: #dd812a;
-    background-color: #ce2121;
-    background-color: #d2e2f5;*/
     font-family: 'Nunito Sans', sans-serif;
 }
 
@@ -31,6 +26,9 @@
     float: left;
 
 }
+/*#info_bg {
+    background-color: #96fa8d;
+}*/
 
 #info{
     left: 0px;
@@ -39,8 +37,9 @@
 
 h2.date {
     padding: 150px 0px 0px 0px;
-    font-size: 36px;
+    font-size: 30px;
     text-align: center; 
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h2.finedust {
@@ -52,11 +51,13 @@ h2.finedust {
 
 h3.con {
     padding: 10px 0px 0px 400px; 
-    font-size: 30px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 h3.state{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: bold ;
     padding-left: 400px; 
+    font-family: 'Source Sans Pro', sans-serif;
 }
