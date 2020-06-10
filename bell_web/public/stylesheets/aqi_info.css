@@ -167,7 +167,7 @@ h3.pm10_text{
     color: black;
     text-align: center; 
     position: relative;
-    left:-130px;
+    left:-90px;
     top : -160px;
     line-height : -20%;
 
@@ -180,7 +180,7 @@ h3.pm10_gra{
     letter-spacing : -1px;
     text-align: center; 
     position: relative;
-    left:-130px;
+    left:-90px;
     top : -160px;
     line-height : -20%;
 
@@ -193,7 +193,7 @@ h3.pm25_text {
     color: black;
     text-align: center; 
     position: relative;
-    left:35px;
+    left: 69px;
     top : -250px;
     line-height : -20%;
 
@@ -206,7 +206,7 @@ h3.pm25_gra{
     letter-spacing : -1px;
     text-align: center; 
     position: relative;
-    left:33px;
+    left: 69px;
     top : -253px;
     line-height : -20%;
 
@@ -220,7 +220,7 @@ button.pm10Button1 {
     font-weight: bold ;
     color: #2f75ca;
     width: 64px;
-    left: -95px;
+    left: 50px;
     top : -170px;
     position: relative;
     padding: 0px 0px 0px 0px;
@@ -234,7 +234,7 @@ button.pm10Button2 {
     font-weight: bold ;
     color: #28997d;
     width: 64px;
-    left: -95px;
+    left: 50px;
     top : -170px;
     position: relative;
     padding: 0px 0px 0px 0px;
@@ -248,7 +248,7 @@ button.pm10Button3 {
     font-weight: bold ;
     color: #db8a3e;
     width: 64px;
-    left: -95px;
+    left: 50px;
     top : -170px;
     position: relative;
     padding: 0px 0px 0px 0px;
@@ -262,7 +262,7 @@ button.pm10Button4 {
     font-weight: bold ;
     color: #d82525;
     width: 64px;
-    left: -95px;
+    left: 50px;
     top : -170px;
     position: relative;
     padding: 0px 0px 0px 0px;
@@ -278,6 +278,7 @@ button.pm25Button1 {
     width: 64px;
     position: relative;
     top : -170px;
+    left: 145px;
     padding: 0px 0px 0px 0px;
 }
 
@@ -291,6 +292,7 @@ button.pm25Button2 {
     width: 64px;
     position: relative;
     top : -170px;
+    left: 145px;
     padding: 0px 0px 0px 0px;
 }
 
@@ -304,6 +306,7 @@ button.pm25Button3 {
     width: 64px;
     position: relative;
     top : -170px;
+    left: 145px;
     padding: 0px 0px 0px 0px;
 }
 
@@ -317,5 +320,6 @@ button.pm25Button4 {
     width: 64px;
     position: relative;
     top : -170px;
+    left: 145px;
     padding: 0px 0px 0px 0px;
 }
