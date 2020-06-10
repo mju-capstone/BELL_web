@@ -3,6 +3,13 @@
     padding-top: 20px;
     font-weight: bolder;
 }
+.name {
+    position: absolute;
+}
+.yearButtons {
+    position: relative;
+    left: 60%;
+}
 .content {
     padding-top: 20px;
 }
@@ -19,6 +26,7 @@ h3{
     font-family: 'Nanum Gothic Coding', monospace;
 }
 button.year18Button {
+    margin-left: 100px;
     background-color: rgb(405, 255, 255);
     text-align: center;
     font-family: 'Caveat', cursive;
@@ -45,15 +53,7 @@ button.year20Button {
     margin: 15px 10px;
     padding-left: 10px;
 }
-.name {
-    float: left;
-}
-.buttons {
-    float: left;
-}
-div.buttons {
-    padding-left: 150px;
-}
+
 .graph {
     position: relative;
 }
@@ -65,16 +65,16 @@ div.buttons {
 }
 
 .slide-title{
-  font-family: 'Nanum Gothic Coding', monospace;
-  margin-left: 24%;
-  margin-top: 30px;
-  font-size: 15px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    margin-left: 26%;
+    margin-top: 7%;
+    font-size: 15px;
 }
 .slide {
-  font-family: 'Nanum Gothic Coding', monospace;
-  margin-left: 36%;
-  margin-top: -5%;
-  font-size: 15px;
+    font-family: 'Nanum Gothic Coding', monospace;
+    margin-left: 36%;
+    margin-top: -2.5%;
+    font-size: 13px;
 }
 ul,li{list-style:none;}
   .slide{height:30px;overflow:hidden;}
