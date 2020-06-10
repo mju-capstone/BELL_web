@@ -1,32 +1,31 @@
 .ststus_graph_view {
     height: 98vh;
-    height: 100%;
     width: 100%;
+    /* background-color: rgb(255, 253, 249); */
 }
 .graph_view {
     font-family: 'Nunito Sans', sans-serif;
-    /* padding-top: 20px; */
-    font-weight: bolder;
-    
-    width: 100%;
-    height: 100vh;
-    margin: 0px;
-    padding: 0px;
-}
-#status_title {
-    margin-top: 30px;
-}
-.status_content {
     padding-top: 20px;
-    margin-left: 50px;
+    font-weight: bolder;
     width: 100%;
+    height: 98vh;
+    margin-top: 15px;
+    /* background-color: rgb(255, 253, 249); */
 }
-/* #info_container {
+.content {
+    padding-top: 20px;
+    margin-left: 45px;
+    margin-top: 15px;
+    width: 100%;
+    height: 98vh;
+    /* background-color: rgb(255, 253, 249); */
+}
+#info_container {
     font-family: 'Caveat', cursive;
     background-color: #ffffff;
     float: left;
     padding: 10px 10px 10px 10px;
-} */
+}
 
 h1{
     padding-left: 50px;
@@ -34,10 +33,8 @@ h1{
     font-family: 'Caveat', cursive;
 }
 
-#status_graph{
+canvas{
     padding-left: 50px;
-    width: 98%;
-    height: 100vh;
 }
 
 .table{
