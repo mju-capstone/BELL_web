@@ -42,9 +42,14 @@ function initialize() {
         center: {lat: -34.397, lng: 150.644},
         zoom: 15
     });
+
+
+    
+
     infoWindow = new google.maps.InfoWindow;
 
     // get my location
+    
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(function(position) {
           var pos = {
@@ -66,6 +71,8 @@ function initialize() {
         // Browser doesn't support Geolocation
         handleLocationError(false, infoWindow, map.getCenter());
     }
+
+    
 
     // var mapProp = {
     //   center: new google.maps.LatLng(37.580468, 126.923456),

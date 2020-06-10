@@ -11,12 +11,12 @@
           h2.f_info 실외 오염물질 안내
           h2.f_info2 Outdoor Pollutant Guidance
           .btn-group
-             button.btn.btn-dark.bt1(type='button') pm10
-             button.btn.btn-dark.bt2(type='button') pm2.5
-             button.btn.btn-dark.bt3(type='button') o3
-             button.btn.btn-dark.bt4(type='button') so2
-             button.btn.btn-dark.bt5(type='button') co
-             button.btn.btn-dark.bt6(type='button') no2
+             button.btn.btn-dark.bt1(type='button') PM10
+             button.btn.btn-dark.bt2(type='button') PM2.5
+             button.btn.btn-dark.bt3(type='button') O3
+             button.btn.btn-dark.bt4(type='button') SO2
+             button.btn.btn-dark.bt5(type='button') CO
+             button.btn.btn-dark.bt6(type='button') NO2
 
           div#infoimg
            div#pm10_img
@@ -30,15 +30,22 @@
            div#co_img  
              img.relative.imgco(src='img/co.png' width="340")   
            div#no2_img  
-             img.relative.imgno2(src='img/no2.png' width="340")         
-
-
+             img.relative.imgno2(src='img/no2.png' width="340")  
 
 
       case pm10Grade1h
        when "1" 
          div#info_bg1
           h2.date=data
+          img.relative.gps(src='img/gps.png' width="33")
+          if (mycity == none) 
+           h3.mycity 
+            | 현재위치 :&nbsp 
+            strong  강남구 
+          else 
+             h3.mycity 
+              | 현재위치 :&nbsp 
+              strong  #{mycity}
           h2.infotitle 실시간 미세먼지(pm10) 농도
           h3.con #{pm10}  ㎍/㎥
           h3.cong pm10 grade : #{pm10Grade1h}
