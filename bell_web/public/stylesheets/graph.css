@@ -1,17 +1,30 @@
+.ststus_graph_view {
+    height: 98vh;
+    height: 100%;
+    width: 100%;
+}
 .graph_view {
     font-family: 'Nunito Sans', sans-serif;
-    padding-top: 20px;
+    /* padding-top: 20px; */
     font-weight: bolder;
+    
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
 }
-.content {
+#status_title {
+    margin-top: 30px;
+}
+.status_content {
     padding-top: 20px;
 }
-#info_container {
+/* #info_container {
     font-family: 'Caveat', cursive;
     background-color: #ffffff;
     float: left;
     padding: 10px 10px 10px 10px;
-}
+} */
 
 h1{
     padding-left: 50px;
@@ -19,8 +32,10 @@ h1{
     font-family: 'Caveat', cursive;
 }
 
-canvas{
+#status_graph{
     padding-left: 50px;
+    width: 98%;
+    height: 100vh;
 }
 
 .table{
