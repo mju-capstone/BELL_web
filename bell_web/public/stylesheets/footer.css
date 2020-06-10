@@ -1,7 +1,16 @@
 .page-footer {
+    font-family: 'Nanum Gothic Coding', monospace;
     width: 100%;
 }
 
 .hr1 {
     width: 100%;
+}
+
+p.intro {
+    line-height: 25px;
+}
+
+p {
+    font-size: smaller;
 }
