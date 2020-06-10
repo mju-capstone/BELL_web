@@ -1,18 +1,27 @@
 .info_view {
     height: 98vh;
+    height: 100%;
     width: 100%;
     /* background-color: #bec7df; */
-    background-color: #ffffff;
-    font-family: 'Nunito Sans', sans-serif;
+    /* background-color: #ffffff; */
+    /*background-color: #119e7b;
+    background-color: #2e73c7;
+    background-color: #dd812a;
+    background-color: #ce2121;
+    background-color: #d2e2f5;*/
+    /* font-family: 'Nunito Sans', sans-serif; */
 }
 
-#map_container, #map2 {
+#map_container {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+ #map2 {
     width: 98%;
     height: 100vh;
-} 
-
-#map {
-    height: 100%;
 }
 
 
