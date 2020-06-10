@@ -18,6 +18,8 @@
 }
 .status_content {
     padding-top: 20px;
+    margin-left: 50px;
+    width: 100%;
 }
 /* #info_container {
     font-family: 'Caveat', cursive;

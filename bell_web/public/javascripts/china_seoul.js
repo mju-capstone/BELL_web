@@ -25,3 +25,14 @@ $(document).ready(function(){
         });
     });          
 });
+
+$(document).ready(function(){
+    $(".china_seoul_title").mouseenter(function() {
+        $('[data-toggle="popover"]').popover('show')
+    })
+});
+$(document).ready(function(){
+    $(".china_seoul_title").mouseleave(function() {
+        $('[data-toggle="popover"]').popover('hide')
+    })
+});
