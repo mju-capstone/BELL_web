@@ -6,12 +6,37 @@
     .col
       br
       h2.finedust Real-time fine dust concentration
+        div#info_con 
+         div#finedust_info        
+          h2.f_info 실외 오염물질 안내
+          h2.f_info2 Outdoor Pollutant Guidance
+          .btn-group
+             button.btn.btn-dark.bt1(type='button') pm10
+             button.btn.btn-dark.bt2(type='button') pm2.5
+             button.btn.btn-dark.bt3(type='button') o3
+             button.btn.btn-dark.bt4(type='button') so2
+             button.btn.btn-dark.bt5(type='button') co
+             button.btn.btn-dark.bt6(type='button') no2
+
+          div#infoimg
+           div#pm10_img
+             img.relative.imgpm10(src='img/pm10.png' width="340")
+           div#pm25_img  
+             img.relative.imgpm25(src='img/pm25.png' width="340")
+           div#o3_img  
+             img.relative.imgo3(src='img/o3.png' width="340")   
+           div#so2_img  
+             img.relative.imgso2(src='img/so2.png' width="340")   
+           div#co_img  
+             img.relative.imgco(src='img/co.png' width="340")   
+           div#no2_img  
+             img.relative.imgno2(src='img/no2.png' width="340")         
+
+
+
 
       case pm10Grade1h
        when "1" 
-        div#info_con 
-         div#finedust_info        
-          h2.f_info 정보 
          div#info_bg1
           h2.date=data
           h2.infotitle 실시간 미세먼지(pm10) 농도
@@ -32,7 +57,7 @@
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#2e73c7'}) very good
               h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
+              h3.pm25_text #{pm25} ㎍/㎥ 
               h3.pm25_gra(style={color: '#2e73c7'}) very good
              when "2"
               button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
@@ -60,9 +85,6 @@
               h3.pm25_gra(style={color: '#ce2121'}) very bad
 
        when "2" 
-        div#info_con 
-         div#finedust_info        
-          h2.f_info 정보 
          div#info_bg2
           h2.date=data
           h2.infotitle 실시간 미세먼지(pm10) 농도
@@ -110,9 +132,6 @@
               h3.pm25_gra(style={color: '#ce2121'}) very bad
               
        when "3" 
-        div#info_con 
-         div#finedust_info        
-          h2.f_info 정보 
          div#info_bg3
           h2.date=data
           h2.infotitle 실시간 미세먼지(pm10) 농도
@@ -161,9 +180,6 @@
               h3.pm25_gra(style={color: '#ce2121'}) very bad
 
        when "4" 
-        div#info_con 
-         div#finedust_info        
-          h2.f_info 정보 
          div#info_bg4
           h2.date=data
           h2.infotitle 실시간 미세먼지(pm10) 농도

@@ -47,7 +47,7 @@
 
 }
 #info_bg1 {
-    margin: 20px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     position: relative;
     background-color: #dde5ff;
     top: -670px;
@@ -56,7 +56,7 @@
 }
 
 #info_bg2 {
-    margin: 20px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     position: relative;
     background-color: #e4f0ed;
     top: -670px;
@@ -65,7 +65,7 @@
 }
 
 #info_bg3 {
-    margin: 20px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     position: relative;
     background-color: #f0ece4;
     top: -670px;
@@ -74,7 +74,7 @@
 }
 
 #info_bg4 {
-    margin: 20px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
     position: relative;
     background-color: #ffe7e7;
     top: -670px;
@@ -86,10 +86,10 @@
 #finedust_info {
     margin: 40px 0px 0px 0px;
     left: 380px;
-    /*background-color: #348873;*/
+    background-color: #fcfcfc;
     position: relative;
     width: 45%;
-    height: 635px ;
+    height: 600px ;
   
 
 }
@@ -104,9 +104,24 @@ h2.infotitle {
 
 
 h2.f_info {
-    font-size: 30px; 
+    font-size: 24px; 
     font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -1.7px;
+    position: relative;
+    top : 30px;
+    font-weight: bold; 
     text-align: center;
+}
+
+h2.f_info2 {
+    font-size: 20px; 
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -1.5px;
+    position: relative;
+    top : 8px;
+    margin: 30px 0px 40px 0px;
+    text-align: center;
+    
 }
 
 
@@ -331,3 +346,124 @@ button.pm25Button4 {
     left: 145px;
     padding: 0px 0px 0px 0px;
 }
+
+
+
+button.bt1{
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    left: 15px;
+    position: relative;
+    letter-spacing : -0.5px;
+
+}
+
+button.bt2{
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    left: 15px;
+    position: relative;
+    letter-spacing : -0.5px;
+
+}
+
+button.bt3{
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    left: 15px;
+    position: relative;
+    letter-spacing : -0.5px;
+
+}
+
+button.bt4{
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    left: 15px;
+    position: relative;
+    letter-spacing : -0.5px;
+
+}
+
+button.bt5{
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    left: 15px;
+    position: relative;
+    letter-spacing : -0.5px;
+
+}
+
+button.bt6{
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    left: 15px;
+    position: relative;
+    letter-spacing : -0.5px;
+
+}
+
+button.bt1{
+    text-align: center;
+    font-family: 'Noto Sans TC', sans-serif;
+    left: 15px;
+    position: relative;
+    letter-spacing : -0.5px;
+
+}
+
+#infoimg {
+    position: relative;
+    top: 20px;
+}
+
+#pm10_img {
+    position: absolute;
+    top: 20px;
+}
+
+#pm25_img {
+    position: absolute;
+    top: 20px;
+}
+
+#o3_img {
+    position: absolute;
+    top: 20px;
+}
+
+#co_img {
+    position: absolute;
+    top: 20px;
+}
+
+#so2_img {
+    position: absolute;
+    top: 20px;
+}
+
+#no2_img {
+    position: absolute;
+    top: 20px;
+}
+
+img.relative.imgpm25 {
+    display :none;
+}
+
+img.relative.imgo3 {
+    display :none;
+}
+
+img.relative.imgco {
+    display :none;
+}
+
+img.relative.imgso2 {
+    display :none;
+}
+
+img.relative.imgno2 {
+    display :none;
+}
+
