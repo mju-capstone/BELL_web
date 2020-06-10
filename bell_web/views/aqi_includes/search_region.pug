@@ -4,13 +4,13 @@
     br
     br
 
-    .input-group.search_bar
-        input#city.form-control(type='textbox', value='Sydney, NSW')
-    br
-    .input-group-append
-        button#submit.btn.btn-dark.searchButton(type='button', value='Geocode') SEARCH
-        
-
+    form(action='../search' method='POST')
+        .input-group.search_bar
+            input.form-control.search_bar(type='text' name='mycity' placeholder='도시명')
+        br
+        .input-group-append
+            button.btn.btn-dark.searchButton(type='submit') SEARCH
+            
 div#drop.float
     .dropdown
         a.dropdown-toggle(href='#' data-toggle='dropdown')

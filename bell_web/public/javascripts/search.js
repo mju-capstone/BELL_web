@@ -1,11 +1,11 @@
 // 검색하기 버튼 클릭 이벤트
 $(document).ready(function(){
     $(".searchButton").click(function() {
-        window.scrollTo({
-            top: 770,
-            left: 0,
-            behavior: 'smooth'
-          });
+        // window.scrollTo({
+        //     top: 770,
+        //     left: 0,
+        //     behavior: 'smooth'
+        //   });
     });          
 });
 
