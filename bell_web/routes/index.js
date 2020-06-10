@@ -13,16 +13,17 @@ router.get('/', function(req, res, next) {
 
 
 // call api for finedust
-const key = 'g5wuVXrLzJMBI9kR2gmdXm6ltsn0zYEicoOG7g2xNHZnGZVp9v7znsIO45M2l7R6rlE5wiD%2FjtIZupMYvyN2Pg%3D%3D'
-
-const addr = 'http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName='
-const addr2 = '&dataTerm=month&pageNo=1&numOfRows=10&ServiceKey=' 
-const addr3 = '&ver=1.3&_returnType=json'
-
-var myaddr = addr + encodeURI('서대문구') + addr2 + key + addr3
-
 router.get('/aqi', catchErrors(async (req, res, next) => {
-  var data, pm10, cai, o3, no2, so2, co, pm10Grade1h, pm10Grade, caiGrade, so2Grade, coGrade, o3Grade, no2Grade
+  const key = 'g5wuVXrLzJMBI9kR2gmdXm6ltsn0zYEicoOG7g2xNHZnGZVp9v7znsIO45M2l7R6rlE5wiD%2FjtIZupMYvyN2Pg%3D%3D'
+
+  const addr = 'http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty?stationName='
+  const addr2 = '&dataTerm=month&pageNo=1&numOfRows=10&ServiceKey=' 
+  const addr3 = '&ver=1.3&_returnType=json'
+
+  var myaddr = addr + encodeURI('서대문구') + addr2 + key + addr3
+  // var myaddr = addr + encodeURI(res.body.class) + addr2 + key + addr3
+
+  var data, pm10, cai, o3, no2, so2, co, pm10Grade1h, pm10Grade, caiGrade, so2Grade, coGrade, o3Grade, no2Grade, pm25, pm25Grade1h
 
   request(myaddr, function(error, response, body){
     if(error){
