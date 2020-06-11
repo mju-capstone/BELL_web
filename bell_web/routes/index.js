@@ -46,15 +46,15 @@ const addr3 = '&ver=1.3&_returnType=json'
 router.get('/aqi', catchErrors(async (req, res, next) => {
 
   // 일단 DB연결부분..주석
-  var queryString = "SELECT * FROM finedust2018"
-  let result1
-  connection.query(queryString, (err,rows,fields) => {
-    console.log(rows)
-    result1 = rows
-  })
-  setTimeout(function(){ 
-    console.log(result1)
-  }, 1000);
+  // var queryString = "SELECT * FROM finedust2018"
+  // let result1
+  // connection.query(queryString, (err,rows,fields) => {
+  //   console.log(rows)
+  //   result1 = rows
+  // })
+  // setTimeout(function(){ 
+  //   console.log(result1)
+  // }, 1000);
 
   var data, pm10, cai, o3, no2, so2, co, pm10Grade1h, pm10Grade, caiGrade, so2Grade, coGrade, o3Grade, no2Grade, pm25, pm25Grade1h
 
