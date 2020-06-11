@@ -120,5 +120,18 @@ router.post('/search', catchErrors(async (req, res, next)=> {
 
 }));
 
+// router.get('/list', catchErrors(async (req,res,next)=> {
+
+//   var queryString = "SELECT * FROM finedust2018"
+
+//   connection.query(queryString, (err,rows,fields)=>{
+//     if(err){
+//       throw err
+//     } 
+//     console.log(rows)
+//     res.render('views/list', {userlist: rows, title: 'UserListTitle'})
+//   })
+// }))
+
 module.exports = router;
 
