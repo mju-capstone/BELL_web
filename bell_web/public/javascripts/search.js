@@ -104,45 +104,24 @@ $(document).ready(function(){
 
 
 
-// function initialize() {
-//     var  map2  =  new  google.maps.Map(document.getElementById('map2'),  {  
-//         center:  new  google.maps.LatLng(37.557941, 126.987481),  
-//         mapTypeId:  google.maps.MapTypeId.ROADMAP,  
-//         zoom:  12  
-//     });  
-
-//     var  t  =  new  Date().getTime();  
-//     var  waqiMapOverlay  =  new  google.maps.ImageMapType({  
-//         getTileUrl:  function(coord,  zoom)  {  
-//             return  'https://tiles.aqicn.org/tiles/usepa-aqi/'  +  zoom  +  "/"  +  coord.x  +  "/"  +  coord.y  +  ".png?token=42449a98a32888268828e3059c4489aef7625391";  
-//         },  
-//         name:  "Air  Quality",  
-//     });  
-//     map2.overlayMapTypes.insertAt(0,waqiMapOverlay);  
-
-// }
-
-
 function initialize() {
-    geocoder = new google.maps.Geocoder();
-    var latlng = new google.maps.LatLng(58.5452824, -92.4986259);
-    var myOptions = {
-        zoom: 15,
-        center: new google.maps.LatLng(34.515233, -100.918565), // latlng,
-        mapTypeControl: false
-    };
-    map = new google.maps.Map(document.getElementById("map2"), myOptions);
+    var  map2  =  new  google.maps.Map(document.getElementById('map2'),  {  
+        center:  new  google.maps.LatLng(37.557941, 126.987481),  
+        mapTypeId:  google.maps.MapTypeId.ROADMAP,  
+        zoom:  12  
+    });  
 
-    var mapLabel = new MapLabel({
-        text: 'Test',
-        position: new google.maps.LatLng(34.515233, -100.918565),
-        map: map,
-        fontSize: 35,
-        align: 'right'
-    });
+    var  t  =  new  Date().getTime();  
+    var  waqiMapOverlay  =  new  google.maps.ImageMapType({  
+        getTileUrl:  function(coord,  zoom)  {  
+            return  'https://tiles.aqicn.org/tiles/usepa-aqi/'  +  zoom  +  "/"  +  coord.x  +  "/"  +  coord.y  +  ".png?token=42449a98a32888268828e3059c4489aef7625391";  
+        },  
+        name:  "Air  Quality",  
+    });  
+    map2.overlayMapTypes.insertAt(0,waqiMapOverlay);  
 
-    codeAddress();    
 }
+
 
 
 
