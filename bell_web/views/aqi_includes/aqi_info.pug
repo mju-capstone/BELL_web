@@ -94,6 +94,14 @@
        when "2" 
          div#info_bg2
           h2.date=data
+          img.relative.gps(src='img/gps.png' width="33")
+          if (mycity == none) 
+           h3.mycity 
+            | 현재위치 :&nbsp 
+            strong  강남구 
+          else 
+             h3.mycity 
+              | 현재위치 :&nbsp 
           h2.infotitle 실시간 미세먼지(pm10) 농도
           h3.con #{pm10}  ㎍/㎥
           h3.cong pm10 grade : #{pm10Grade1h}
@@ -141,6 +149,14 @@
        when "3" 
          div#info_bg3
           h2.date=data
+          img.relative.gps(src='img/gps.png' width="33")
+          if (mycity == none) 
+           h3.mycity 
+            | 현재위치 :&nbsp 
+            strong  강남구 
+          else 
+             h3.mycity 
+              | 현재위치 :&nbsp 
           h2.infotitle 실시간 미세먼지(pm10) 농도
           h3.con #{pm10}  ㎍/㎥
           h3.cong pm10 grade : #{pm10Grade1h}
@@ -189,6 +205,14 @@
        when "4" 
          div#info_bg4
           h2.date=data
+          img.relative.gps(src='img/gps.png' width="33")
+          if (mycity == none) 
+           h3.mycity 
+            | 현재위치 :&nbsp 
+            strong  강남구 
+          else 
+             h3.mycity 
+              | 현재위치 :&nbsp 
           h2.infotitle 실시간 미세먼지(pm10) 농도
           h3.con #{pm10}  ㎍/㎥
           h3.cong pm10 grade : #{pm10Grade1h}
