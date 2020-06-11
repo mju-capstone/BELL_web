@@ -12,7 +12,7 @@ $(document).ready(function(){
 // floating button 클릭 이벤트
 $(document).ready(function(){
     $("#status").click(function() {
-        var location = document.querySelector(".graph_view").offsetTop;
+        var location = document.querySelector("#map2").offsetTop;
         window.scrollTo({
             top: location,
             left: 0,
