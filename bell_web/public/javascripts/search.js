@@ -43,9 +43,6 @@ function initialize() {
         zoom: 15
     });
 
-
-    
-
     infoWindow = new google.maps.InfoWindow;
 
     // get my location
@@ -71,7 +68,8 @@ function initialize() {
         // Browser doesn't support Geolocation
         handleLocationError(false, infoWindow, map.getCenter());
     }
-
+    
+    
     
 
     // var mapProp = {
