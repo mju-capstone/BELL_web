@@ -68,9 +68,8 @@ function initialize() {
     } else {
         // Browser doesn't support Geolocation
         handleLocationError(false, infoWindow, map.getCenter());
-    } */
-
-    /*var city = "${mycity}"*/
+    }
+    
 
     var mapProp = {
        center: new google.maps.LatLng(37.580468, 126.923456),
