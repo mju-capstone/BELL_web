@@ -5,13 +5,14 @@
     padding-top: 20px;
     font-weight: bolder;
     height: 98.5vh;
+    width: 100%;
 }
 .china_seoul_title {
     position: absolute;
 }
 .yearButtons {
     position: relative;
-    left: 60%;
+    left: 70%;
 }
 .content {
     padding-top: 20px;
@@ -30,34 +31,36 @@ h3.pollution{
     font-family: 'Caveat', cursive;
     font-size: 35px;
 }
-button.year18Button {
+button.year18Button, button.year19Button, button.year20Button {
     margin-left: 100px;
     background-color: rgb(405, 255, 255);
     text-align: center;
     font-family: 'Caveat', cursive;
-    font-size: large;
-    width: 64px;
+    font-size: 25px;
+    width: 8%;
     margin: 15px 10px;
-    padding-left: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
 }
-button.year19Button {
+/* button.year19Button {
     background-color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Caveat', cursive;
-    font-size: large;
+    font-size: 30px;
     width: 64px;
     margin: 15px 10px;
     padding-left: 10px;
+
 }
 button.year20Button {
     background-color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Caveat', cursive;
-    font-size: large;
+    font-size: 30px;
     width: 64px;
     margin: 15px 10px;
     padding-left: 10px;
-}
+} */
 
 .graph {
     position: relative;
@@ -72,14 +75,14 @@ button.year20Button {
 .slide-title{
     font-family: 'Nanum Gothic Coding', monospace;
     margin-left: 26%;
-    margin-top: 7%;
-    font-size: 15px;
+    margin-top: 3%;
+    font-size: larger;
 }
 .slide {
     font-family: 'Nanum Gothic Coding', monospace;
     margin-left: 36%;
-    margin-top: -2.5%;
-    font-size: 13px;
+    margin-top: -1.5%;
+    font-size: large;
 }
 ul,li{list-style:none;}
   .slide{height:30px;overflow:hidden;}
