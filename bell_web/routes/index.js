@@ -10,8 +10,8 @@ const mysql =  require('mysql')
 const connection  = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '1234',
-  database: 'testDB'
+  password: 'mysql',
+  database: 'china_seoul'
 })
 
 var Chart = require('chart.js')
@@ -21,6 +21,20 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+// get finedust db
+// router.get('/list', catchErrors(async (req,res,next)=> {
+
+//   var month, china_average, seoul_average
+//   var queryString = "SELECT * FROM finedust2018"
+
+//   connection.query(queryString, (err,rows,fields)=>{
+//     if(err){
+//       throw err
+//     } 
+//     console.log(rows)
+//     res.render('user/list', {userlist: rows, title: 'FineDust2018'})
+//   })
+// }))
 
 // call api for finedust
 const key = 'g5wuVXrLzJMBI9kR2gmdXm6ltsn0zYEicoOG7g2xNHZnGZVp9v7znsIO45M2l7R6rlE5wiD%2FjtIZupMYvyN2Pg%3D%3D'
@@ -32,15 +46,15 @@ const addr3 = '&ver=1.3&_returnType=json'
 router.get('/aqi', catchErrors(async (req, res, next) => {
 
   // 일단 DB연결부분..주석
-  // var queryString = "SELECT * FROM user"
-  // let result1
-  // connection.query(queryString, (err,rows,fields) => {
-  //   console.log(rows)
-  //   result1 = rows[0].first_name
-  // })
-  // setTimeout(function(){ 
-  //   console.log(result1)
-  // }, 1000);
+  var queryString = "SELECT * FROM finedust2018"
+  let result1
+  connection.query(queryString, (err,rows,fields) => {
+    console.log(rows)
+    result1 = rows
+  })
+  setTimeout(function(){ 
+    console.log(result1)
+  }, 1000);
 
   var data, pm10, cai, o3, no2, so2, co, pm10Grade1h, pm10Grade, caiGrade, so2Grade, coGrade, o3Grade, no2Grade, pm25, pm25Grade1h
 
