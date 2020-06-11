@@ -10,8 +10,8 @@ const mysql =  require('mysql')
 const connection  = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: '1234',
-  database: 'testDB'
+  password: 'mysql',
+  database: 'china_seoul'
 })
 
 var Chart = require('chart.js')
@@ -21,6 +21,20 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+// get finedust db
+// router.get('/list', catchErrors(async (req,res,next)=> {
+
+//   var month, china_average, seoul_average
+//   var queryString = "SELECT * FROM finedust2018"
+
+//   connection.query(queryString, (err,rows,fields)=>{
+//     if(err){
+//       throw err
+//     } 
+//     console.log(rows)
+//     res.render('user/list', {userlist: rows, title: 'FineDust2018'})
+//   })
+// }))
 
 // call api for finedust
 const key = 'g5wuVXrLzJMBI9kR2gmdXm6ltsn0zYEicoOG7g2xNHZnGZVp9v7znsIO45M2l7R6rlE5wiD%2FjtIZupMYvyN2Pg%3D%3D'
@@ -32,11 +46,11 @@ const addr3 = '&ver=1.3&_returnType=json'
 router.get('/aqi', catchErrors(async (req, res, next) => {
 
   // 일단 DB연결부분..주석
-  // var queryString = "SELECT * FROM user"
+  // var queryString = "SELECT * FROM finedust2018"
   // let result1
   // connection.query(queryString, (err,rows,fields) => {
   //   console.log(rows)
-  //   result1 = rows[0].first_name
+  //   result1 = rows
   // })
   // setTimeout(function(){ 
   //   console.log(result1)
@@ -73,6 +87,7 @@ router.get('/aqi', catchErrors(async (req, res, next) => {
     res.render('aqi/aqi_page', {data: data, cai:cai, pm10:pm10, o3:o3, so2:so2, co:co, no2:no2, caiGrade:caiGrade, pm10Grade1h:pm10Grade1h,
       so2Grade:so2Grade, coGrade:coGrade, o3Grade:o3Grade, no2Grade:no2Grade, pm25:pm25, pm25Grade1h:pm25Grade1h})
   }, 500);
+  
 
 }))
 
@@ -86,8 +101,9 @@ router.post('/search', catchErrors(async (req, res, next)=> {
   let findaddr = addr + encodeURI(mycity) + addr2+ key + addr3
   console.log(findaddr)
 
-
   var myaddr = addr + encodeURI('강남구') + addr2 + key + addr3
+  
+  
 
   request(findaddr, function(error, response, body){
     if(error){

@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+    h1.custom=title
+    br
+    table
+        tbody
+            each i, idx in userlist
+                tr
+                    td=i.num
+                    td=i.month
+                    td=i.china
+                    td=i.seoul
