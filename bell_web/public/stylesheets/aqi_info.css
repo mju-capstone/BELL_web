@@ -49,10 +49,10 @@
 
 }
 #info_bg1 {
-    margin: 40px 0px 0px 0px;
+    margin: 70px 0px 0px 0px;
     position: relative;
     background-color: #dde5ff;
-    top: -670px;
+    top: -700px;
     height: 600px;
     width: 45%;
 }
@@ -168,12 +168,12 @@ h3.cong {
     text-align: center; 
 }
 
-h2.finedust {
+/* h2.finedust {
     padding: 0px 0px 30px 0px;
     font-size: 35px;
     font-family: 'Caveat', cursive;
     text-align: left; 
-}
+} */
 
 
 h3.state{
