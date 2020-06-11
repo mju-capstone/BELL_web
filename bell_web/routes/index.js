@@ -87,6 +87,7 @@ router.get('/aqi', catchErrors(async (req, res, next) => {
     res.render('aqi/aqi_page', {data: data, cai:cai, pm10:pm10, o3:o3, so2:so2, co:co, no2:no2, caiGrade:caiGrade, pm10Grade1h:pm10Grade1h,
       so2Grade:so2Grade, coGrade:coGrade, o3Grade:o3Grade, no2Grade:no2Grade, pm25:pm25, pm25Grade1h:pm25Grade1h})
   }, 500);
+  
 
 }))
 
@@ -100,8 +101,9 @@ router.post('/search', catchErrors(async (req, res, next)=> {
   let findaddr = addr + encodeURI(mycity) + addr2+ key + addr3
   console.log(findaddr)
 
-
   var myaddr = addr + encodeURI('강남구') + addr2 + key + addr3
+  
+  
 
   request(findaddr, function(error, response, body){
     if(error){

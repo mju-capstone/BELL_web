@@ -7,18 +7,17 @@
     font-family: 'Nunito Sans', sans-serif;
     /* padding-top: 20px; */
     font-weight: bolder;
-    
     width: 100%;
     height: 100vh;
-    margin: 0px;
+    margin: auto;
     padding: 0px;
 }
 #status_title {
     margin-top: 30px;
 }
 .status_content {
-    padding-top: 20px;
-    margin-left: 50px;
+    margin: 2% auto auto auto;
+    /* padding-top: 20px; */
     width: 100%;
 }
 /* #info_container {
@@ -37,7 +36,7 @@ h1{
 #status_graph{
     padding-left: 50px;
     width: 98%;
-    height: 100vh;
+    height: 80%;
 }
 
 .table{
@@ -52,4 +51,7 @@ h1{
 
 h3{
     font-family: 'Nanum Gothic Coding', monospace;
+}
+#grade {
+    margin: auto;
 }
