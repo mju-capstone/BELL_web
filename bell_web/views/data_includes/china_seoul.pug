@@ -1,6 +1,5 @@
 .info_view
-    .row
-        .col.china_seoul_view
+        .china_seoul_view
             div.china_seoul_title(data-container='body' data-toggle='popover' data-placement='right' data-content='분석 결과, 작년과 재작년에 비해 2020년 초 중국과 국내 미세먼지 농도가 낮은 것은 코로나의 영향인 것으로 나타남')
                 h1="Seoul-China Graph"
             div.yearButtons
@@ -9,11 +8,11 @@
                 button.btn.btn-outline-dark.year20Button(type='button') 2020
             div.graph
                 div.year18
-                    canvas(id='2018_china_seoul_graph', width='700', height='500')
+                    canvas(id='2018_china_seoul_graph', width='1500', height='500')
                 div.year19
-                    canvas(id='2019_china_seoul_graph', width='700', height='500')
+                    canvas(id='2019_china_seoul_graph', width='1500', height='500')
                 div.year20
-                    canvas(id='2020_china_seoul_graph', width='700', height='500')
+                    canvas(id='2020_china_seoul_graph', width='1500', height='500')
             div.slide-title
                 span.badge.badge-primary 관련 기사
             div.slide
@@ -38,7 +37,5 @@
                         a(href='https://www.newspim.com/news/view/20200323000839') 작년보다 줄어든 미세먼지…코로나19 때문?
                     li
                         a(href='https://news.joins.com/article/23785773') '코로나 봉쇄' 풀린 중국, 미세먼지도 되돌아왔다
-        .col
-            div#map2
-            
-            
+        //- .col
+        //-     div#map2

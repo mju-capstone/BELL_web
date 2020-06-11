@@ -65,18 +65,18 @@ $(document).ready(function(){
     var chart3 = new Chart(ctx3, {
         type: "line",
         data: {
-            labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9","10", "11", "12"],
+            labels: ["1", "2", "3", "4"],
             datasets: [
                 {
                     label: "Korea",
                     borderColor: "rgb(255, 99, 132)",
-                    data: [44.4193548387097, 41.9655172413793, 47.5806451612903, 46.75, null, null, null, null, null, null, null, null],
+                    data: [44.4193548387097, 41.9655172413793, 47.5806451612903, 46.75],
                     fill: false
                 },
                 {
                     label: "China",
                     borderColor: "rgb(255, 99, 100)",
-                    data: [95.084229390681, 56.9616858237548, 71.3978494623656, 72.3710317460317, null, null, null, null, null, null, null, null],
+                    data: [95.084229390681, 56.9616858237548, 71.3978494623656, 72.3710317460317],
                     fill: false
                 }
             ]
@@ -92,20 +92,6 @@ $(document).ready(function(){
         }
     }); 
 
-    // getStockData() {
-    //     this.stocksService.getStockData()
-    //       .subscribe(
-    //         (list) => {
-    //           for(var i = 0; i < list.length; i++) {
-    //             this.stockOpen.push(list[i]['open']);
-    //           }
-    //           console.log('after loop: ', this.stockOpen);
-    //         },
-    //         (error) => console.error(error)
-    //       );
-    //       console.log('real: ', this.stockOpen);
-    //       console.log('test: ', this.testData);
-    //   }
     var ctx4 = document.getElementById("status_graph").getContext("2d");
     var chart4 = new Chart(ctx4, {
         type: "line",
