@@ -57,6 +57,16 @@
     width: 45%;
 }
 
+#info_bg0 {
+    margin: 40px 0px 0px 0px;
+    position: relative;
+    background-color: #e2e2e2;
+    top: -670px;
+    height: 600px;
+    width: 45%;
+}
+
+
 #info_bg2 {
     margin: 40px 0px 0px 0px;
     position: relative;
@@ -132,6 +142,15 @@ img.relative.gps {
     top: 66px;
 }
 
+img.relative.gps2 {
+    position: absolute;
+    left: 55px;
+    top: 35px;
+}
+
+
+
+
 h2.date {
     /*padding: 0px 100px 0px 100px;*/
     padding : 30px 0px 0px 0px;
@@ -180,6 +199,7 @@ h3.state{
     font-size: 30px;
     font-weight: bold; 
     font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -0.5px;
     margin: 0px 0px 0px 0px;
 }
 
@@ -188,6 +208,7 @@ h3.state1{
     font-weight: bold; 
     position: absolute;
     font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -0.5px;
     margin: 0px 0px 0px 100px;
 
 }
@@ -197,9 +218,23 @@ h3.state2{
     font-weight: bold; 
     position: absolute;
     font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -0.5px;
     margin: 0px 0px 0px 140px;
 
 }
+
+h3.state_d{
+    font-size: 27px;
+    font-weight: bold; 
+    position: absolute;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -2px;
+    margin: 0px 0px 0px 100px;
+
+}
+
+
+
 h3.pm10_text{
     font-size: 18px;
     font-family: 'Nanum Gothic', sans-serif;
@@ -213,6 +248,12 @@ h3.pm10_text{
 
 }
 
+
+
+
+
+
+
 h3.pm10_gra{
     font-weight: bold; 
     font-size: 21px;
@@ -223,8 +264,107 @@ h3.pm10_gra{
     left:-90px;
     top : -160px;
     line-height : -20%;
+    
 
 }
+
+
+h3.pm10_gra_d{
+    font-weight: bold; 
+    font-size: 19px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -1.5px;
+    text-align: center; 
+    position: relative;
+    left:-90px;
+    top : -160px;
+    line-height : -20%;
+    
+
+}
+
+
+h3.pm25_text_2 {
+    font-size: 18px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -1px;
+    color: black;
+    text-align: center; 
+    position: relative;
+    left: 73px;
+    top : -245px;
+    line-height : -20%;
+
+}
+
+
+h3.pm25_gra {
+    font-weight: bold; 
+    font-size: 21px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -1px;
+    text-align: center; 
+    position: relative;
+    left: 73px;
+    top : -260px;
+    line-height : -20%;
+
+}
+
+h3.pm25_grade {
+    font-weight: bold; 
+    font-size: 19px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -1.5px;
+    text-align: center; 
+    position: relative;
+    left: 73px;
+    top : -260px;
+    line-height : -20%;
+
+}
+
+
+h3.pm25_gra_d{
+    font-weight: bold; 
+    font-size: 19px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -1.5px;
+    text-align: center; 
+    position: relative;
+    left: 69px;
+    top : -243px;
+    line-height : -20%;
+}
+
+
+h3.pm25_gra_2 {
+    font-weight: bold; 
+    font-size: 21px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -1px;
+    text-align: center; 
+    position: relative;
+    left: 73px;
+    top : -247px;
+    line-height : -20%;
+
+}
+
+h3.pm25_gra_d2 {
+    font-weight: bold; 
+    font-size: 19px;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -1.5px;
+    text-align: center; 
+    position: relative;
+    left: 69px;
+    top : -243px;
+    line-height : -20%;
+
+}
+
+
 
 h3.pm25_text {
     font-size: 18px;
@@ -233,24 +373,12 @@ h3.pm25_text {
     color: black;
     text-align: center; 
     position: relative;
-    left: 69px;
-    top : -250px;
+    left: 73px;
+    top : -260px;
     line-height : -20%;
 
 }
 
-h3.pm25_gra{
-    font-weight: bold; 
-    font-size: 21px;
-    font-family: 'Nanum Gothic', sans-serif;
-    letter-spacing : -1px;
-    text-align: center; 
-    position: relative;
-    left: 69px;
-    top : -253px;
-    line-height : -20%;
-
-}
 
 .pm10bg1 {
     font-family: 'Nanum Gothic', sans-serif;
@@ -269,6 +397,44 @@ h3.pm25_gra{
 
 
 }
+
+span.badge.pm10 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold ;
+    font-size: 14px ;
+    letter-spacing : -1.3px;
+    width: 64px;
+    left: 50px;
+    top : -170px;
+    position: relative;
+    padding: 3px 60px 3px 10px;
+}
+
+
+span.badge.pm25_2 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold ;
+    font-size: 14px ;
+    letter-spacing : -1.3px;
+    width: 64px;
+    top : -255px;
+    left: 205px;
+    position: relative;
+    padding: 3px 70px 3px 10px;
+}
+
+span.badge.pm25 {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold ;
+    font-size: 14px ;
+    letter-spacing : -1.3px;
+    width: 64px;
+    top : -269px;
+    left: 205px;
+    position: relative;
+    padding: 3px 70px 3px 10px;
+}
+
 
 
 button.pm10Button1 {

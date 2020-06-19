@@ -34,6 +34,74 @@
 
 
       case pm10Grade1h
+       default   
+        div#info_bg0
+          h2.date=data
+          img.relative.gps2(src='img/gps.png' width="33")
+          if (mycity == none) 
+           h3.mycity 
+            | 현재위치 :&nbsp 
+            strong  강남구 
+          else 
+             h3.mycity 
+              | 현재위치 :&nbsp 
+              strong  #{mycity}
+          h2.infotitle 실시간 미세먼지(pm10) 농도
+          h3.con #{pm10}  ㎍/㎥
+          h3.cong pm10 grade : #{pm10Grade1h}
+          h3.state
+           h3.state_d(style={color: '#333333'}) 등급 측정중
+           div#img
+             img.relative(src='img/bad2.png' width="125")
+           div#img2  
+             img.relative(src='img/info_line.png' width="260")    
+           div.buttons
+            //button.btn.btn-outline-dark.pm10Button1(type='button') pm10 
+            case pm25Grade1h
+             when "1"
+              //button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
+              span.badge.badge-pill.badge-dark.pm10 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra_d(style={color: '#333333'}) 등급 측정중
+              span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#2e73c7'}) very good
+             when "2"
+              //button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
+              span.badge.badge-pill.badge-dark.pm10 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra_d(style={color: '#333333'}) 등급 측정중 
+              span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#119e7b'}) good
+             when "3"
+              //button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
+              span.badge.badge-pill.badge-dark.pm10 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra_d(style={color: '#333333'}) 등급 측정중
+              span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#d17d2e'}) bad
+             when "4"  
+              //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
+              span.badge.badge-pill.badge-dark.pm10 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra_d(style={color: '#333333'}) 등급 측정중 
+              span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#ce2121'}) very bad
+             
+             default 
+              //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
+              span.badge.badge-pill.badge-dark.pm10 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra_d(style={color: '#333333'}) 등급 측정중
+              span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_d2(style={color: '#333333'}) 등급 측정중
+         
+
+
        when "1" 
          div#info_bg1
           h2.date=data
@@ -56,40 +124,49 @@
            div#img2  
              img.relative(src='img/info_line.png' width="260")    
            div.buttons
-            button.btn.btn-outline-dark.pm10Button1(type='button') pm10 
+            //button.btn.btn-outline-dark.pm10Button1(type='button') pm10 
             case pm25Grade1h
              when "1"
-              button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
+              span.badge.badge-pill.badge-primary.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#2e73c7'}) very good
-              h3.pm25_text 초미세먼지
-              h3.pm25_text #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#2e73c7'}) very good
+              span.badge.badge-pill.badge-primary.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#2e73c7'}) very good
              when "2"
-              button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
+              span.badge.badge-pill.badge-primary.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#2e73c7'}) very good
-              h3.pm25_text 초미세먼지
-              h3.pm25_text #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#119e7b'}) good
+              span.badge.badge-pill.badge-success.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#119e7b'}) good
              when "3"
-              button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
+              span.badge.badge-pill.badge-primary.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#2e73c7'}) very good
-              h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#d17d2e'}) bad
+              span.badge.badge-pill.badge-warning.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#d17d2e'}) bad
              when "4"  
-              button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
+              span.badge.badge-pill.badge-primary.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#2e73c7'}) very good
-              h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#ce2121'}) very bad
+              span.badge.badge-pill.badge-danger.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#ce2121'}) very bad
+             
+             default
+              //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5  
+              span.badge.badge-pill.badge-primary.pm10 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#2e73c7'}) very good
+              span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_d2(style={color: '#333333'}) 등급 측정중
 
        when "2" 
          div#info_bg2
@@ -112,40 +189,48 @@
            div#img2  
              img.relative(src='img/info_line.png' width="260")    
            div.buttons
-            button.btn.btn-outline-dark.pm10Button2(type='button') pm10 
+            //button.btn.btn-outline-dark.pm10Button2(type='button') pm10 
             case pm25Grade1h
              when "1"
-              button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
+              span.badge.badge-pill.badge-success.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#119e7b'}) good
-              h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
+              span.badge.badge-pill.badge-primary.pm25 초미세먼지
+              h3.pm25_text #{pm25} ㎍/㎥ 
               h3.pm25_gra(style={color: '#2e73c7'}) very good
              when "2"
-              button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
+              span.badge.badge-pill.badge-success.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#119e7b'}) good
-              h3.pm25_text 초미세먼지
+              span.badge.badge-pill.badge-success.pm25 초미세먼지
               h3.pm25_text #{pm25} ㎍/㎥ 
               h3.pm25_gra(style={color: '#119e7b'}) good
              when "3"
-              button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
+              span.badge.badge-pill.badge-success.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#119e7b'}) good
-              h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
+              span.badge.badge-pill.badge-warning.pm25 초미세먼지
+              h3.pm25_text #{pm25} ㎍/㎥ 
               h3.pm25_gra(style={color: '#d17d2e'}) bad
              when "4"  
-              button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
+              span.badge.badge-pill.badge-success.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#119e7b'}) good
-              h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
+              span.badge.badge-pill.badge-danger.pm25 초미세먼지
+              h3.pm25_text #{pm25} ㎍/㎥ 
               h3.pm25_gra(style={color: '#ce2121'}) very bad
+             default
+              //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5  
+              span.badge.badge-pill.badge-success.pm10 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#119e7b'}) good
+              span.badge.badge-pill.badge-dark.pm25 초미세먼지
+              h3.pm25_text #{pm25} ㎍/㎥ 
+              h3.pm25_grade(style={color: '#333333'}) 등급 측정중 
               
        when "3" 
          div#info_bg3
@@ -169,40 +254,48 @@
            div#img2  
              img.relative(src='img/info_line.png' width="260")    
            div.buttons
-            button.btn.btn-outline-dark.pm10Button3(type='button') pm10 
+            //button.btn.btn-outline-dark.pm10Button3(type='button') pm10 
             case pm25Grade1h
              when "1"
-              button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
+              span.badge.badge-pill.badge-warning.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#d17d2e'}) bad
-              h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#2e73c7'}) very good
+              span.badge.badge-pill.badge-primary.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#2e73c7'}) very good
              when "2"
-              button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
+              span.badge.badge-pill.badge-warning.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#d17d2e'}) bad
-              h3.pm25_text 초미세먼지
-              h3.pm25_text #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#119e7b'}) good
+              span.badge.badge-pill.badge-success.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#119e7b'}) good
              when "3"
-              button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
+              span.badge.badge-pill.badge-warning.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#d17d2e'}) bad
-              h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#d17d2e'}) bad
+              span.badge.badge-pill.badge-warning.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#d17d2e'}) bad
              when "4"  
-              button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
+              span.badge.badge-pill.badge-warning.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#d17d2e'}) bad
-              h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#ce2121'}) very bad
+              span.badge.badge-pill.badge-danger.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#ce2121'}) very bad
+             default 
+              //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5  
+              span.badge.badge-pill.badge-warning.pm10 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#d17d2e'}) bad
+              span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_d2(style={color: '#333333'}) 등급 측정중  
 
        when "4" 
          div#info_bg4
@@ -226,40 +319,48 @@
            div#img2  
              img.relative(src='img/info_line.png' width="260")    
            div.buttons
-            button.btn.btn-outline-dark.pm10Button4(type='button') pm10 
+            //button.btn.btn-outline-dark.pm10Button4(type='button') pm10 
             case pm25Grade1h
              when "1"
-              button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button1(type='button') pm2.5
+              span.badge.badge-pill.badge-danger.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#ce2121'}) very bad
-              h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#2e73c7'}) very good
+              span.badge.badge-pill.badge-primary.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#2e73c7'}) very good
              when "2"
-              button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
+              span.badge.badge-pill.badge-danger.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#ce2121'}) very bad
-              h3.pm25_text 초미세먼지
-              h3.pm25_text #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#119e7b'}) good
+              span.badge.badge-pill.badge-success.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#119e7b'}) good
              when "3"
-              button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
+              span.badge.badge-pill.badge-danger.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#ce2121'}) very bad
-              h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#d17d2e'}) bad
+              span.badge.badge-pill.badge-warning.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#d17d2e'}) bad
              when "4"  
-              button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
-              h3.pm10_text 미세먼지 
+              //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
+              span.badge.badge-pill.badge-danger.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#ce2121'}) very bad
-              h3.pm25_text 초미세먼지
-              h3.pm25_gra #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#ce2121'}) very bad
+              span.badge.badge-pill.badge-danger.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#ce2121'}) very bad
+             default 
+              //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5  
+              span.badge.badge-pill.badge-danger.pm10 미세먼지 
+              h3.pm10_text #{pm10} ㎍/㎥
+              h3.pm10_gra(style={color: '#d17d2e'}) bad
+              span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_d2(style={color: '#333333'}) 등급 측정중    
        
 
 
