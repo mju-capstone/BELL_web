@@ -27,6 +27,34 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
+    $(".wind18Button").click(function() {
+        $(".wind18").show();
+        $(".wind19").hide();
+        $(".wind20").hide();
+    });          
+});
+$(document).ready(function(){
+    $(".wind19Button").click(function() {
+        $(".wind18").hide();
+        $(".wind19").show();
+        $(".wind19").css({
+            'visibility': 'visible'
+        });
+        $(".wind20").hide();
+    });          
+});
+$(document).ready(function(){
+    $(".wind20Button").click(function() {
+        $(".wind18").hide();
+        $(".wind19").hide();
+        $(".wind20").show();
+        $(".wind20").css({
+            'visibility': 'visible'
+        });
+    });          
+});
+
+$(document).ready(function(){
     $(".china_seoul_title").mouseenter(function() {
         $('[data-toggle="popover"]').popover('show')
     })

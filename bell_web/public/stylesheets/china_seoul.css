@@ -8,17 +8,25 @@
     width: 100%;
 
 }
+.wind_view {
+    float: left;
+}
 .china_seoul_title {
     margin-left: 2%;
     margin-top: 1.5%;
     position: absolute;
 }
-.yearButtons {
+.wind_title {
+    margin-left: 2%;
+    margin-top: 2%;
+    position: absolute;
+}
+.yearButtons, .windYearButtons {
     position: relative;
     left: 70%;
 }
-.graph18, .graph19, .graph20 {
-    padding: 3% 3% 2% 4%;
+.graph18, .graph19, .graph20, .wind_graph18, .wind_graph19, .wind_graph20 {
+    padding: 3% 2% 1% 4%;
 }
 /* h3.pollution{
     font-family: 'Nanum Gothic Coding', monospace;
@@ -30,11 +38,21 @@ button.year18Button, button.year19Button, button.year20Button {
     background-color: rgb(405, 255, 255);
     text-align: center;
     font-family: 'Caveat', cursive;
-    font-size: 25px;
+    font-size: 17px;
     width: 7%;
-    margin: 2% 0.5%;
+    padding-left: 1%;
+    margin: 4% 1%;
     /* padding-left: 10px;
     padding-right: 10px; */
+}
+button.wind18Button, button.wind19Button, button.wind20Button {
+    background-color: rgb(405, 255, 255);
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    font-size: 17px;
+    width: 7%;
+    padding-left: 1%;
+    margin: 5% 1%;
 }
 .graph {
     position: relative;
@@ -45,17 +63,25 @@ button.year18Button, button.year19Button, button.year20Button {
 .year20 {
     display: none;
 }
-
+.windGraph {
+    position: relative;
+}
+.wind19 {
+    display: none;
+}
+.wind20 {
+    display: none;
+}
 .slide-title{
     font-family: 'Nanum Gothic Coding', monospace;
-    margin-left: 26%;
-    margin-top: 3%;
+    margin-left: 30%;
+    margin-top: -3%;
     font-size: larger;
 }
 .slide {
     font-family: 'Nanum Gothic Coding', monospace;
-    margin-left: 36%;
-    margin-top: -1.5%;
+    margin-left: 3%;
+    margin-top: -2.8%;
     font-size: large;
 }
 ul,li{list-style:none;}
