@@ -60,6 +60,15 @@ router.get('/aqi', catchErrors(async (req, res, next) => {
 
   var myaddr = addr + encodeURI('강남구') + addr2 + key + addr3
 
+  var weatherAPI = "https://api.openweathermap.org/data/2.5/weather?q=seoul&appid=853c909f0f8639d63344ec1b9f73c12a"
+  request(weatherAPI, function(error, response, body){
+    if(error){
+      console.log(error)
+    }
+    var weatherOBJ = JSON.parse(body)
+    console.log(weatherOBJ)
+  })
+
   request(myaddr, function(error, response, body){
     if(error){
       console.log(error)
@@ -136,18 +145,6 @@ router.post('/search', catchErrors(async (req, res, next)=> {
 
 }));
 
-// router.get('/list', catchErrors(async (req,res,next)=> {
-
-//   var queryString = "SELECT * FROM finedust2018"
-
-//   connection.query(queryString, (err,rows,fields)=>{
-//     if(err){
-//       throw err
-//     } 
-//     console.log(rows)
-//     res.render('views/list', {userlist: rows, title: 'UserListTitle'})
-//   })
-// }))
 
 module.exports = router;
 
