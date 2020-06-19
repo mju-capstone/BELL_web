@@ -10,6 +10,8 @@
 }
 .wind_view {
     float: left;
+    background-color: #e6f4fa;
+
 }
 .china_seoul_title {
     margin-left: 2%;
@@ -77,12 +79,14 @@ button.wind18Button, button.wind19Button, button.wind20Button {
     margin-left: 30%;
     margin-top: -3%;
     font-size: larger;
+    z-index: 1;
 }
 .slide {
     font-family: 'Nanum Gothic Coding', monospace;
     margin-left: 3%;
     margin-top: -2.8%;
     font-size: large;
+    z-index: 1;
 }
 ul,li{list-style:none;}
   .slide{height:30px;overflow:hidden;}
