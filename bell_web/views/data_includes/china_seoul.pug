@@ -1,41 +1,57 @@
 .info_view
-        .china_seoul_view
+    .row
+        .col.china_seoul_view
             div.china_seoul_title(data-container='body' data-toggle='popover' data-placement='right' data-content='분석 결과, 작년과 재작년에 비해 2020년 초 중국과 국내 미세먼지 농도가 낮은 것은 코로나의 영향인 것으로 나타남')
                 h1="Seoul-China Graph"
             div.yearButtons
-                button.btn.btn-outline-dark.year18Button(type='button') 2018
-                button.btn.btn-outline-dark.year19Button(type='button') 2019
-                button.btn.btn-outline-dark.year20Button(type='button') 2020
+                button.btn.btn-outline-dark.year18Button(type='button') 2018 
+                button.btn.btn-outline-dark.year19Button(type='button') 2019 
+                button.btn.btn-outline-dark.year20Button(type='button') 2020 
             div.graph
                 div.year18
-                    canvas.graph18(id='2018_china_seoul_graph', width='1500', height='500')
+                    canvas.graph18(id='2018_china_seoul_graph', width='750', height='500')
                 div.year19
-                    canvas.graph19(id='2019_china_seoul_graph', width='1500', height='500')
+                    canvas.graph19(id='2019_china_seoul_graph', width='750', height='500')
                 div.year20
-                    canvas.graph20(id='2020_china_seoul_graph', width='1500', height='500')
-            div.slide-title
-                span.badge.badge-primary 관련 기사
-            div.slide
-                ul
-                    li
-                        a(href='https://www.yna.co.kr/view/AKR20200515167300097') 코로나19 여파로 공기 좋아진 중국…"초미세먼지 15% 감소"
-                    li
-                        a(href='https://news.joins.com/article/23785773') '코로나 봉쇄' 풀린 중국, 미세먼지도 되돌아왔다
-                    li    
-                        a(href='http://www.hani.co.kr/arti/society/environment/944580.html') “코로나 영향 받은 2~3월, 1월보다 미세먼지 개선 효과 커”
-                    li
-                        a(href='https://www.edaily.co.kr/news/read?newsId=01338246625768264&mediaCodeNo=257&gtrack=sok') 중국發 황사로 수도권 미세먼지 '나쁨'…경상도 낮에 더워
-                    li
-                        a(href='https://kr-mb.theepochtimes.com/%EB%81%9D%EB%82%9C-%EC%A4%84-%EC%95%8C%EC%95%98%EB%8D%98-%EC%A4%91%EA%B5%AD%EB%B0%9C-%EB%AF%B8%EC%84%B8%EB%A8%BC%EC%A7%80-%EA%B3%B5%EC%8A%B5%EC%9D%B4-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%EB%90%90_530104.html') 끝난 줄 알았던 '중국발 미세먼지' 공습이 다시 시작됐다
-                    li
-                        a(href='http://www.hani.co.kr/arti/society/environment/917731.html') “국내 초미세먼지 32% 중국발”…한·중·일 첫 공동연구
-                    li
-                        a(href='http://www.donga.com/news/article/all/20191121/98465021/1') 초미세먼지 32% 中서 넘어와… 고농도때 영향 中반대로 비공개
-                    li
-                        a(href='https://biz.chosun.com/site/data/html_dir/2020/01/09/2020010901260.html') 중국발 미세먼지 영향 19%… "베이징 아닌 상하이서 온다"
-                    li
-                        a(href='https://www.newspim.com/news/view/20200323000839') 작년보다 줄어든 미세먼지…코로나19 때문?
-                    li
-                        a(href='https://news.joins.com/article/23785773') '코로나 봉쇄' 풀린 중국, 미세먼지도 되돌아왔다
+                    canvas.graph20(id='2020_china_seoul_graph', width='750', height='500')
+        .col.wind_view
+            div.wind_title
+                h1="Wind Direction Graph"
+            div.windYearButtons
+                button.btn.btn-outline-dark.wind18Button(type='button') 2018 
+                button.btn.btn-outline-dark.wind19Button(type='button') 2019 
+                button.btn.btn-outline-dark.wind20Button(type='button') 2020 
+            div.windGraph
+                div.wind18
+                    canvas.wind_graph18(id='2018_wind_graph', width='700', height='500')
+                div.wind19
+                    canvas.wind_graph19(id='2019_wind_graph', width='700', height='500')
+                div.wind20
+                    canvas.wind_graph20(id='2020_wind_graph', width='700', height='500')
+            
+        div.slide-title
+            span.badge.badge-primary 관련 기사
+        div.slide
+            ul
+                li
+                    a(href='https://www.yna.co.kr/view/AKR20200515167300097') 코로나19 여파로 공기 좋아진 중국…"초미세먼지 15% 감소"
+                li
+                    a(href='https://news.joins.com/article/23785773') '코로나 봉쇄' 풀린 중국, 미세먼지도 되돌아왔다
+                li    
+                    a(href='http://www.hani.co.kr/arti/society/environment/944580.html') “코로나 영향 받은 2~3월, 1월보다 미세먼지 개선 효과 커”
+                li
+                    a(href='https://www.edaily.co.kr/news/read?newsId=01338246625768264&mediaCodeNo=257&gtrack=sok') 중국發 황사로 수도권 미세먼지 '나쁨'…경상도 낮에 더워
+                li
+                    a(href='https://kr-mb.theepochtimes.com/%EB%81%9D%EB%82%9C-%EC%A4%84-%EC%95%8C%EC%95%98%EB%8D%98-%EC%A4%91%EA%B5%AD%EB%B0%9C-%EB%AF%B8%EC%84%B8%EB%A8%BC%EC%A7%80-%EA%B3%B5%EC%8A%B5%EC%9D%B4-%EB%8B%A4%EC%8B%9C-%EC%8B%9C%EC%9E%91%EB%90%90_530104.html') 끝난 줄 알았던 '중국발 미세먼지' 공습이 다시 시작됐다
+                li
+                    a(href='http://www.hani.co.kr/arti/society/environment/917731.html') “국내 초미세먼지 32% 중국발”…한·중·일 첫 공동연구
+                li
+                    a(href='http://www.donga.com/news/article/all/20191121/98465021/1') 초미세먼지 32% 中서 넘어와… 고농도때 영향 中반대로 비공개
+                li
+                    a(href='https://biz.chosun.com/site/data/html_dir/2020/01/09/2020010901260.html') 중국발 미세먼지 영향 19%… "베이징 아닌 상하이서 온다"
+                li
+                    a(href='https://www.newspim.com/news/view/20200323000839') 작년보다 줄어든 미세먼지…코로나19 때문?
+                li
+                    a(href='https://news.joins.com/article/23785773') '코로나 봉쇄' 풀린 중국, 미세먼지도 되돌아왔다
         //- .col
         //-     div#map2
