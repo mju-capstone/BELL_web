@@ -11,8 +11,8 @@ $(document).ready(function(){
 
 // floating button 클릭 이벤트
 $(document).ready(function(){
-    $("#status").click(function() {
-        var location = document.querySelector("#map2").offsetTop;
+    $("#btnList1").click(function() {
+        var location = document.querySelector(".info_view").offsetTop;
         window.scrollTo({
             top: location,
             left: 0,
@@ -22,7 +22,7 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-    $("#seo_chi").click(function() {
+    $("#btnList2").click(function() {
         var location2 = document.querySelector(".china_seoul_view").offsetTop;
         window.scrollTo({
             top: location2,
