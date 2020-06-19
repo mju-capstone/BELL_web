@@ -2,66 +2,40 @@
 
 .china_seoul_view {
     font-family: 'Nunito Sans', sans-serif;
-    padding-top: 20px;
+    padding-top: 0.5%;
     font-weight: bolder;
     height: 98.5vh;
     width: 100%;
+
 }
 .china_seoul_title {
+    margin-left: 2%;
+    margin-top: 1.5%;
     position: absolute;
 }
 .yearButtons {
     position: relative;
     left: 70%;
 }
-.content {
-    padding-top: 20px;
+.graph18, .graph19, .graph20 {
+    padding: 3% 3% 2% 4%;
 }
-h1{
-    padding-left: 50px;
-    padding-top: 10px;
-}
-
-canvas{
-    padding-left: 50px;
-    padding-top: 50px;
-}
-h3.pollution{
-    /* font-family: 'Nanum Gothic Coding', monospace; */
+/* h3.pollution{
+    font-family: 'Nanum Gothic Coding', monospace;
     font-family: 'Caveat', cursive;
     font-size: 35px;
-}
+} */
 button.year18Button, button.year19Button, button.year20Button {
-    margin-left: 100px;
+    /* margin-left: 10%; */
     background-color: rgb(405, 255, 255);
     text-align: center;
     font-family: 'Caveat', cursive;
     font-size: 25px;
-    width: 8%;
-    margin: 15px 10px;
+    width: 7%;
+    margin: 2% 0.5%;
     /* padding-left: 10px;
     padding-right: 10px; */
 }
-/* button.year19Button {
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Caveat', cursive;
-    font-size: 30px;
-    width: 64px;
-    margin: 15px 10px;
-    padding-left: 10px;
-
-}
-button.year20Button {
-    background-color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Caveat', cursive;
-    font-size: 30px;
-    width: 64px;
-    margin: 15px 10px;
-    padding-left: 10px;
-} */
-
 .graph {
     position: relative;
 }
