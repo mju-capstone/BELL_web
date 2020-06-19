@@ -20,24 +20,24 @@
 
           div#infoimg
            div#pm10_img
-             img.relative.imgpm10(src='img/pm10.png' width="340")
+             img.relative.imgpm10(src='img/pm10.png' width="94%")
            div#pm25_img  
-             img.relative.imgpm25(src='img/pm25.png' width="340")
+             img.relative.imgpm25(src='img/pm25.png' width="94%")
            div#o3_img  
-             img.relative.imgo3(src='img/o3.png' width="340")   
+             img.relative.imgo3(src='img/o3.png' width="94%")   
            div#so2_img  
-             img.relative.imgso2(src='img/so2.png' width="340")   
+             img.relative.imgso2(src='img/so2.png' width="94%")   
            div#co_img  
-             img.relative.imgco(src='img/co.png' width="340")   
+             img.relative.imgco(src='img/co.png' width="94%")   
            div#no2_img  
-             img.relative.imgno2(src='img/no2.png' width="340")  
+             img.relative.imgno2(src='img/no2.png' width="94%")  
 
 
       case pm10Grade1h
        default   
         div#info_bg0
           h2.date=data
-          img.relative.gps2(src='img/gps.png' width="33")
+          img.relative.gps2(src='img/gps.png' width="10%")
           if (mycity == none) 
            h3.mycity 
             | 현재위치 :&nbsp 
@@ -52,9 +52,9 @@
           h3.state
            h3.state_d(style={color: '#333333'}) 등급 측정중
            div#img
-             img.relative(src='img/bad2.png' width="125")
+             img.relative(src='img/bad2.png' width="36%")
            div#img2  
-             img.relative(src='img/info_line.png' width="260")    
+             img.relative(src='img/info_line.png' width="75%")    
            div.buttons
             //button.btn.btn-outline-dark.pm10Button1(type='button') pm10 
             case pm25Grade1h
@@ -105,7 +105,7 @@
        when "1"
          div#info_bg1
           h2.date=data
-          img.relative.gps(src='img/gps.png' width="33")
+          img.relative.gps(src='img/gps.png' width="10%")
           if (mycity == none) 
            h3.mycity 
             | 현재위치 :&nbsp 
@@ -120,9 +120,9 @@
           h3.state
            h3.state1(style={color: '#2e73c7'}) very good
            div#img
-             img.relative(src='img/good_blue.png' width="125")
+             img.relative(src='img/good_blue.png' width="36%")
            div#img2  
-             img.relative(src='img/info_line.png' width="260")    
+             img.relative(src='img/info_line.png' width="75%")    
            div.buttons
             //button.btn.btn-outline-dark.pm10Button1(type='button') pm10 
             case pm25Grade1h
@@ -171,7 +171,7 @@
        when "2" 
          div#info_bg2
           h2.date=data
-          img.relative.gps(src='img/gps.png' width="33")
+          img.relative.gps(src='img/gps.png' width="10%")
           if (mycity == none) 
            h3.mycity 
             | 현재위치 :&nbsp 
@@ -186,9 +186,9 @@
           h3.state
            h3.state2(style={color: '#119e7b'}) good
            div#img
-             img.relative(src='img/soso_green.png' width="125") 
+             img.relative(src='img/soso_green.png' width="36%") 
            div#img2  
-             img.relative(src='img/info_line.png' width="260")    
+             img.relative(src='img/info_line.png' width="75%")    
            div.buttons
             //button.btn.btn-outline-dark.pm10Button2(type='button') pm10 
             case pm25Grade1h
@@ -236,7 +236,7 @@
        when "3" 
          div#info_bg3
           h2.date=data
-          img.relative.gps(src='img/gps.png' width="33")
+          img.relative.gps(src='img/gps.png' width="10%")
           if (mycity == none) 
            h3.mycity 
             | 현재위치 :&nbsp 
@@ -251,9 +251,9 @@
           h3.state
            h3.state2(style={color: '#d17d2e'}) bad
            div#img
-             img.relative(src='img/bad_orange.png' width="125")
+             img.relative(src='img/bad_orange.png' width="36%")
            div#img2  
-             img.relative(src='img/info_line.png' width="260")    
+             img.relative(src='img/info_line.png' width="75%")    
            div.buttons
             //button.btn.btn-outline-dark.pm10Button3(type='button') pm10 
             case pm25Grade1h
@@ -301,7 +301,7 @@
        when "4" 
          div#info_bg4
           h2.date=data
-          img.relative.gps(src='img/gps.png' width="33")
+          img.relative.gps(src='img/gps.png' width="10%")
           if (mycity == none) 
            h3.mycity 
             | 현재위치 :&nbsp 
@@ -316,9 +316,9 @@
           h3.state
            h3.state1(style={color: '#ce2121'}) very bad
            div#img
-             img.relative(src='img/worst_red.png' width="130")
+             img.relative(src='img/worst_red.png' width="36%")
            div#img2  
-             img.relative(src='img/info_line.png' width="260")    
+             img.relative(src='img/info_line.png' width="75%")    
            div.buttons
             //button.btn.btn-outline-dark.pm10Button4(type='button') pm10 
             case pm25Grade1h
