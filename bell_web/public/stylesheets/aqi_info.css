@@ -119,6 +119,7 @@ h2.f_info {
     letter-spacing : -2px;
     position: relative;
     top : 5.2%;
+    left: -4%;
     font-weight: bold; 
     text-align: center;
 }
@@ -129,6 +130,7 @@ h2.f_info2 {
     letter-spacing : -1.7px;
     position: relative;
     top : 2.5%;
+    left: -4%;
     margin: 6% 0% 16% 0%;
     text-align: center;
     
@@ -267,7 +269,7 @@ h3.pm10_gra{
     letter-spacing : -1px;
     text-align: center; 
     position: absolute;
-    left: 18%;
+    left: 12%;
     top : 88%;
     
     
@@ -494,43 +496,42 @@ button.bt1{
 
 #infoimg {
     position: relative;
-    top: 7%;
-    left: 2%;
+    top: 9%;
 }
 
 #pm10_img {
     position: absolute;
-    top: 7%;
+    top: 11%;
     left: 2%;
 }
 
 #pm25_img {
     position: absolute;
-    top: 7%;
+    top: 11%;
     left: 2%;
 }
 
 #o3_img {
     position: absolute;
-    top: 7%;
+    top: 11%;
     left: 2%;
 }
 
 #co_img {
     position: absolute;
-    top: 7%;
+    top: 11%;
     left: 2%;
 }
 
 #so2_img {
     position: absolute;
-    top: 7%;
+    top: 11%;
     left: 2%;
 }
 
 #no2_img {
     position: absolute;
-    top: 7%;
+    top: 11%;
     left: 2%;
 }
 
