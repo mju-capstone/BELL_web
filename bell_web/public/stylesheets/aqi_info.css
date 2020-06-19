@@ -35,115 +35,115 @@
 
 #img {
     position: relative;
-    left:100px;
-    top : -170px;
+    left: 32%;
+    top : -27%;
     float: left;
 
 }
 #img2 {
     position: relative;
-    left : 35px;
-    top : -50px;
+    left : 11%;
+    top : -5%;
 
 }
 #info_bg1 {
-    margin: 70px 0px 0px 0px;
+    margin: 4% 0% 0% 0%;
     position: relative;
     background-color: #dde5ff;
-    top: -700px;
-    height: 600px;
+    top: -5%;
+    height: 85%;
     width: 45%;
 }
 
 #info_bg0 {
-    margin: 40px 0px 0px 0px;
+    margin: 4% 0% 0% 0%;
     position: relative;
     background-color: #e2e2e2;
-    top: -670px;
-    height: 600px;
+    top: -5%;
+    height: 85%;
     width: 45%;
 }
 
 
 #info_bg2 {
-    margin: 40px 0px 0px 0px;
+    margin: 4% 0% 0% 0%;
     position: relative;
     background-color: #e4f0ed;
-    top: -670px;
-    height: 600px;
+    top: -5%;
+    height: 85%;
     width: 45%;
 }
 
 #info_bg3 {
-    margin: 40px 0px 0px 0px;
+    margin: 4% 0% 0% 0%;
     position: relative;
     background-color: #f0ece4;
-    top: -670px;
-    height: 600px;
+    top: -5%;
+    height: 85%;
     width: 45%;
 }
 
 #info_bg4 {
-    margin: 40px 0px 0px 0px;
+    margin: 4% 0% 0% 0%;
     position: relative;
     background-color: #ffe7e7;
-    top: -670px;
-    height: 600px;
+    top: -5%;
+    height: 85%;
     width: 45%;
 }
 
 
 #finedust_info {
-    margin: 40px 0px 0px 0px;
-    left: 380px;
+    margin: 1% 0% 0% 0%;
+    left: 49%;
     background-color: #fcfcfc;
-    position: relative;
-    width: 45%;
-    height: 600px ;
+    position: absolute;
+    width: 47%;
+    height: 85%;
   
 
 }
 
 h2.infotitle {
-    font-size: 20px; 
+    font-size: 127%; 
     text-align: center;
     font-family: 'Nanum Gothic', sans-serif;
-    letter-spacing : -1.3px;
-    margin: 0px 0px 40px 0px;
+    letter-spacing : -1.5px;
+    margin: 0% 0% 10% 0%;
 }
 
 
 h2.f_info {
-    font-size: 24px; 
+    font-size: 75%; 
     font-family: 'Nanum Gothic', sans-serif;
-    letter-spacing : -1.7px;
+    letter-spacing : -2px;
     position: relative;
-    top : 30px;
+    top : 5.2%;
     font-weight: bold; 
     text-align: center;
 }
 
 h2.f_info2 {
-    font-size: 20px; 
+    font-size: 61%; 
     font-family: 'Nanum Gothic', sans-serif;
-    letter-spacing : -1.5px;
+    letter-spacing : -1.7px;
     position: relative;
-    top : 8px;
-    margin: 30px 0px 40px 0px;
+    top : 2.5%;
+    margin: 6% 0% 16% 0%;
     text-align: center;
     
 }
 
 img.relative.gps {
     position: absolute;
-    left: 55px;
-    top: 66px;
+    left: 18.5%;
+    top: 11%;
 }
 
 img.relative.gps2 {
     position: absolute;
-    left: 55px;
-    top: 35px;
+    left: 19%;    
+    top: 6%;
 }
 
 
@@ -151,17 +151,17 @@ img.relative.gps2 {
 
 h2.date {
     /*padding: 0px 100px 0px 100px;*/
-    padding : 30px 0px 0px 0px;
-    font-size: 27px;
+    padding : 10% 0% 0% 0%;
+    font-size: 168%;
     font-weight: bold ; 
-    letter-spacing : -1px;
+    letter-spacing : -1.5px;
     text-align: center; 
     font-family: 'Nanum Gothic', sans-serif;
 }
 
 
 h3.mycity {
-    font-size: 20px;
+    font-size: 125%;
     letter-spacing : -2px;
     text-align: center; 
     font-family: 'Nanum Gothic', sans-serif;
@@ -171,97 +171,105 @@ h3.mycity {
 
 h3.con {
     /*padding: 10px 0px 0px 400px; */
-    font-size: 20px;
+    font-size: 125%;
     font-family: 'Nanum Gothic', sans-serif;
-    margin: 0px 0px 0px 0px;
     text-align: center; 
 }
 h3.cong {
     /*padding: 10px 0px 0px 400px; */
-    font-size: 20px;
+    font-size: 125%;
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing : -1px;
-    margin: 160px 0px 0px 0px;
+    margin: 50% 0% 0% 0%;
     text-align: center; 
 }
 
-/* h2.finedust {
-    padding: 0px 0px 30px 0px;
-    font-size: 35px;
+h2.finedust {
+    padding: 1% 0% 2.5% 0%;
+    font-size: 200%;
     font-family: 'Caveat', cursive;
     text-align: left; 
 } */
 
 
 h3.state{
-    font-size: 30px;
+    font-size: 100%;
     font-weight: bold; 
     font-family: 'Nanum Gothic', sans-serif;
-    letter-spacing : -0.5px;
-    margin: 0px 0px 0px 0px;
+    letter-spacing : -1.5px;
 }
 
+
+
 h3.state1{
-    font-size: 30px;
+    font-size: 180%;
     font-weight: bold; 
     position: absolute;
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing : -0.5px;
-    margin: 0px 0px 0px 100px;
+    margin: 0% 0% 0% 30%;
 
 }
 
 h3.state2{
-    font-size: 30px;
+    font-size: 180%;
     font-weight: bold; 
     position: absolute;
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing : -0.5px;
-    margin: 0px 0px 0px 140px;
+    margin: 0% 0% 0% 40%;
 
 }
 
 h3.state_d{
-    font-size: 27px;
+    font-size: 164%;
     font-weight: bold; 
     position: absolute;
     font-family: 'Nanum Gothic', sans-serif;
-    letter-spacing : -2px;
-    margin: 0px 0px 0px 100px;
+    letter-spacing : -3px;
+    margin: 0% 0% 0% 32%;
 
 }
 
 
 
 h3.pm10_text{
-    font-size: 18px;
+    font-size: 112.5%;
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing : -1px;
     color: black;
     text-align: center; 
-    position: relative;
-    left:-90px;
-    top : -160px;
-    line-height : -20%;
+    position: absolute;
+    left: 16%;
+    top : 83%;
+   
 
 }
 
 
+h3.pm25_text_2 {
+    font-size: 112.5%;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -1px;
+    color: black;
+    text-align: center; 
+    position: absolute;
+    left: 63%;
+    top : 83%;
 
-
-
+}
 
 
 h3.pm10_gra{
     font-weight: bold; 
-    font-size: 21px;
+    font-size: 136%;
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing : -1px;
     text-align: center; 
-    position: relative;
-    left:-90px;
-    top : -160px;
-    line-height : -20%;
+    position: absolute;
+    left: 18%;
+    top : 88%;
+    
     
 
 }
@@ -269,33 +277,45 @@ h3.pm10_gra{
 
 h3.pm10_gra_d{
     font-weight: bold; 
-    font-size: 19px;
+    font-size: 124%;
     font-family: 'Nanum Gothic', sans-serif;
-    letter-spacing : -1.5px;
+    letter-spacing : -2.5px;
     text-align: center; 
-    position: relative;
-    left:-90px;
-    top : -160px;
-    line-height : -20%;
+    position: absolute;
+    left: 11%;
+    top : 88%;
     
-
 }
 
 
-h3.pm25_text_2 {
-    font-size: 18px;
+
+h3.pm25_gra_d{
+    font-weight: bold; 
+    font-size: 124%;
+    font-family: 'Nanum Gothic', sans-serif;
+    letter-spacing : -2.5px;
+    text-align: center; 
+    position: absolute;
+    left: 59%;
+    top : 88%;
+}
+
+
+h3.pm25_gra_2 {
+    font-weight: bold; 
+    font-size: 130%;
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing : -1px;
-    color: black;
     text-align: center; 
-    position: relative;
-    left: 73px;
-    top : -245px;
-    line-height : -20%;
+    position: absolute;
+    left: 65%;
+    top : 88%;
 
 }
 
 
+
+/*
 h3.pm25_gra {
     font-weight: bold; 
     font-size: 21px;
@@ -307,8 +327,9 @@ h3.pm25_gra {
     top : -260px;
     line-height : -20%;
 
-}
+}*/
 
+/*
 h3.pm25_grade {
     font-weight: bold; 
     font-size: 19px;
@@ -320,35 +341,8 @@ h3.pm25_grade {
     top : -260px;
     line-height : -20%;
 
-}
-
-
-h3.pm25_gra_d{
-    font-weight: bold; 
-    font-size: 19px;
-    font-family: 'Nanum Gothic', sans-serif;
-    letter-spacing : -1.5px;
-    text-align: center; 
-    position: relative;
-    left: 69px;
-    top : -243px;
-    line-height : -20%;
-}
-
-
-h3.pm25_gra_2 {
-    font-weight: bold; 
-    font-size: 21px;
-    font-family: 'Nanum Gothic', sans-serif;
-    letter-spacing : -1px;
-    text-align: center; 
-    position: relative;
-    left: 73px;
-    top : -247px;
-    line-height : -20%;
-
-}
-
+}*/
+/*
 h3.pm25_gra_d2 {
     font-weight: bold; 
     font-size: 19px;
@@ -360,10 +354,10 @@ h3.pm25_gra_d2 {
     top : -243px;
     line-height : -20%;
 
-}
+}*/
 
 
-
+/*
 h3.pm25_text {
     font-size: 18px;
     font-family: 'Nanum Gothic', sans-serif;
@@ -375,10 +369,10 @@ h3.pm25_text {
     top : -260px;
     line-height : -20%;
 
-}
+}*/
 
 
-.pm10bg1 {
+/*.pm10bg1 {
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing : -1px;
     position: relative;
@@ -394,34 +388,34 @@ h3.pm25_text {
     left : 50px;
 
 
-}
+}*/
 
 span.badge.pm10 {
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: bold ;
-    font-size: 14px ;
+    font-size: 88% ;
     letter-spacing : -1.3px;
-    width: 64px;
-    left: 50px;
-    top : -170px;
-    position: relative;
-    padding: 3px 60px 3px 10px;
+    width: 10%;
+    left: 15%;
+    top : 78%;
+    position: absolute;
+    padding: 1% 18% 1% 3%;
 }
 
 
 span.badge.pm25_2 {
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: bold ;
-    font-size: 14px ;
+    font-size: 88% ;
     letter-spacing : -1.3px;
-    width: 64px;
-    top : -255px;
-    left: 205px;
-    position: relative;
-    padding: 3px 70px 3px 10px;
+    width: 10%;
+    top : 78%;
+    left: 60%;
+    position: absolute;
+    padding: 1% 22% 1% 3%;
 }
 
-span.badge.pm25 {
+/*span.badge.pm25 {
     font-family: 'Nanum Gothic', sans-serif;
     font-weight: bold ;
     font-size: 14px ;
@@ -431,128 +425,14 @@ span.badge.pm25 {
     left: 205px;
     position: relative;
     padding: 3px 70px 3px 10px;
-}
-
-
-
-button.pm10Button1 {
-    background-color: rgba(0, 0, 0, 0.959);
-    text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: large;
-    font-weight: bold ;
-    color: #2f75ca;
-    width: 64px;
-    left: 50px;
-    top : -170px;
-    position: relative;
-    padding: 0px 0px 0px 0px;
-}
-
-button.pm10Button2 {
-    background-color: rgba(0, 0, 0, 0.959);
-    text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: large;
-    font-weight: bold ;
-    color: #28997d;
-    width: 64px;
-    left: 50px;
-    top : -170px;
-    position: relative;
-    padding: 0px 0px 0px 0px;
-}
-
-button.pm10Button3 {
-    background-color: rgba(0, 0, 0, 0.959);
-    text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: large;
-    font-weight: bold ;
-    color: #db8a3e;
-    width: 64px;
-    left: 50px;
-    top : -170px;
-    position: relative;
-    padding: 0px 0px 0px 0px;
-}
-
-button.pm10Button4 {
-    background-color: rgba(0, 0, 0, 0.959);
-    text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: large;
-    font-weight: bold ;
-    color: #d82525;
-    width: 64px;
-    left: 50px;
-    top : -170px;
-    position: relative;
-    padding: 0px 0px 0px 0px;
-}
-
-button.pm25Button1 {
-    background-color: rgba(0, 0, 0, 0.959);
-    text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: large;
-    font-weight: bold ;
-    color: #2f75ca;
-    width: 64px;
-    position: relative;
-    top : -170px;
-    left: 145px;
-    padding: 0px 0px 0px 0px;
-}
-
-button.pm25Button2 {
-    background-color: rgba(0, 0, 0, 0.959);
-    text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: large;
-    font-weight: bold ;
-    color: #28997d;
-    width: 64px;
-    position: relative;
-    top : -170px;
-    left: 145px;
-    padding: 0px 0px 0px 0px;
-}
-
-button.pm25Button3 {
-    background-color: rgba(0, 0, 0, 0.959);
-    text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: large;
-    font-weight: bold ;
-    color: #db8a3e;
-    width: 64px;
-    position: relative;
-    top : -170px;
-    left: 145px;
-    padding: 0px 0px 0px 0px;
-}
-
-button.pm25Button4 {
-    background-color: rgba(0, 0, 0, 0.959);
-    text-align: center;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-size: large;
-    font-weight: bold ;
-    color: #d82525;
-    width: 64px;
-    position: relative;
-    top : -170px;
-    left: 145px;
-    padding: 0px 0px 0px 0px;
-}
+}*/
 
 
 
 button.bt1{
     text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    left: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    left: 1%;
     position: relative;
     letter-spacing : -0.5px;
 
@@ -560,8 +440,8 @@ button.bt1{
 
 button.bt2{
     text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    left: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    left: 1%;
     position: relative;
     letter-spacing : -0.5px;
 
@@ -569,8 +449,8 @@ button.bt2{
 
 button.bt3{
     text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    left: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    left: 1%;
     position: relative;
     letter-spacing : -0.5px;
 
@@ -578,8 +458,8 @@ button.bt3{
 
 button.bt4{
     text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    left: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    left: 1%;
     position: relative;
     letter-spacing : -0.5px;
 
@@ -587,8 +467,8 @@ button.bt4{
 
 button.bt5{
     text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    left: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    left: 1%;
     position: relative;
     letter-spacing : -0.5px;
 
@@ -596,8 +476,8 @@ button.bt5{
 
 button.bt6{
     text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    left: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    left: 1%;
     position: relative;
     letter-spacing : -0.5px;
 
@@ -605,8 +485,8 @@ button.bt6{
 
 button.bt1{
     text-align: center;
-    font-family: 'Noto Sans TC', sans-serif;
-    left: 15px;
+    font-family: 'Nanum Gothic', sans-serif;
+    left: 4%;
     position: relative;
     letter-spacing : -0.5px;
 
@@ -614,37 +494,44 @@ button.bt1{
 
 #infoimg {
     position: relative;
-    top: 20px;
+    top: 7%;
+    left: 2%;
 }
 
 #pm10_img {
     position: absolute;
-    top: 20px;
+    top: 7%;
+    left: 2%;
 }
 
 #pm25_img {
     position: absolute;
-    top: 20px;
+    top: 7%;
+    left: 2%;
 }
 
 #o3_img {
     position: absolute;
-    top: 20px;
+    top: 7%;
+    left: 2%;
 }
 
 #co_img {
     position: absolute;
-    top: 20px;
+    top: 7%;
+    left: 2%;
 }
 
 #so2_img {
     position: absolute;
-    top: 20px;
+    top: 7%;
+    left: 2%;
 }
 
 #no2_img {
     position: absolute;
-    top: 20px;
+    top: 7%;
+    left: 2%;
 }
 
 img.relative.imgpm25 {
