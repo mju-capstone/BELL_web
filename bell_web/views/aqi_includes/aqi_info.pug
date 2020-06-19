@@ -5,7 +5,7 @@
       div#map2
     .col
       br
-      h2.finedust Real-time fine dust concentration
+      h2.finedust finddust
         div#info_con 
          div#finedust_info        
           h2.f_info 실외 오염물질 안내
@@ -98,11 +98,11 @@
               h3.pm10_gra_d(style={color: '#333333'}) 등급 측정중
               span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
               h3.pm25_text_2 #{pm25} ㎍/㎥ 
-              h3.pm25_gra_d2(style={color: '#333333'}) 등급 측정중
+              h3.pm25_gra_d(style={color: '#333333'}) 등급 측정중
          
 
 
-       when "1" 
+       when "1"
          div#info_bg1
           h2.date=data
           img.relative.gps(src='img/gps.png' width="33")
@@ -166,7 +166,7 @@
               h3.pm10_gra(style={color: '#2e73c7'}) very good
               span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
               h3.pm25_text_2 #{pm25} ㎍/㎥ 
-              h3.pm25_gra_d2(style={color: '#333333'}) 등급 측정중
+              h3.pm25_gra_d(style={color: '#333333'}) 등급 측정중
 
        when "2" 
          div#info_bg2
@@ -183,7 +183,8 @@
           h2.infotitle 실시간 미세먼지(pm10) 농도
           h3.con #{pm10}  ㎍/㎥
           h3.cong pm10 grade : #{pm10Grade1h}
-          h3.state(style={color: '#119e7b'}) good
+          h3.state
+           h3.state2(style={color: '#119e7b'}) good
            div#img
              img.relative(src='img/soso_green.png' width="125") 
            div#img2  
@@ -196,41 +197,41 @@
               span.badge.badge-pill.badge-success.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#119e7b'}) good
-              span.badge.badge-pill.badge-primary.pm25 초미세먼지
-              h3.pm25_text #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#2e73c7'}) very good
+              span.badge.badge-pill.badge-primary.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#2e73c7'}) very good
              when "2"
               //button.btn.btn-outline-dark.pm25Button2(type='button') pm2.5 
               span.badge.badge-pill.badge-success.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#119e7b'}) good
-              span.badge.badge-pill.badge-success.pm25 초미세먼지
-              h3.pm25_text #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#119e7b'}) good
+              span.badge.badge-pill.badge-success.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#119e7b'}) good
              when "3"
               //button.btn.btn-outline-dark.pm25Button3(type='button') pm2.5 
               span.badge.badge-pill.badge-success.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#119e7b'}) good
-              span.badge.badge-pill.badge-warning.pm25 초미세먼지
-              h3.pm25_text #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#d17d2e'}) bad
+              span.badge.badge-pill.badge-warning.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#d17d2e'}) bad
              when "4"  
               //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5 
               span.badge.badge-pill.badge-success.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#119e7b'}) good
-              span.badge.badge-pill.badge-danger.pm25 초미세먼지
-              h3.pm25_text #{pm25} ㎍/㎥ 
-              h3.pm25_gra(style={color: '#ce2121'}) very bad
+              span.badge.badge-pill.badge-danger.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_2(style={color: '#ce2121'}) very bad
              default
               //button.btn.btn-outline-dark.pm25Button4(type='button') pm2.5  
               span.badge.badge-pill.badge-success.pm10 미세먼지 
               h3.pm10_text #{pm10} ㎍/㎥
               h3.pm10_gra(style={color: '#119e7b'}) good
-              span.badge.badge-pill.badge-dark.pm25 초미세먼지
-              h3.pm25_text #{pm25} ㎍/㎥ 
-              h3.pm25_grade(style={color: '#333333'}) 등급 측정중 
+              span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
+              h3.pm25_text_2 #{pm25} ㎍/㎥ 
+              h3.pm25_gra_d(style={color: '#333333'}) 등급 측정중 
               
        when "3" 
          div#info_bg3
@@ -295,7 +296,7 @@
               h3.pm10_gra(style={color: '#d17d2e'}) bad
               span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
               h3.pm25_text_2 #{pm25} ㎍/㎥ 
-              h3.pm25_gra_d2(style={color: '#333333'}) 등급 측정중  
+              h3.pm25_gra_d(style={color: '#333333'}) 등급 측정중  
 
        when "4" 
          div#info_bg4
@@ -360,7 +361,7 @@
               h3.pm10_gra(style={color: '#d17d2e'}) bad
               span.badge.badge-pill.badge-dark.pm25_2 초미세먼지
               h3.pm25_text_2 #{pm25} ㎍/㎥ 
-              h3.pm25_gra_d2(style={color: '#333333'}) 등급 측정중    
+              h3.pm25_gra_d(style={color: '#333333'}) 등급 측정중    
        
 
 
