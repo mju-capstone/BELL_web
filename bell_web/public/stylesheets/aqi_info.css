@@ -161,6 +161,7 @@ h2.f_info2 {
 
 img.relative.gps {
     position: absolute;
+
     left: 18.5%;
     top: 11%;
 }
@@ -170,8 +171,6 @@ img.relative.gps2 {
     left: 19%;    
     top: 6%;
 }
-
-
 
 
 h2.date {
@@ -287,12 +286,12 @@ h3.pm25_text_2 {
 
 h3.pm10_gra{
     font-weight: bold; 
-    font-size: 136%;
+    font-size: 130%;
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing : -1px;
     text-align: center; 
     position: absolute;
-    left: 12%;
+    left: 17.5%;
     top : 88%;
     
     
