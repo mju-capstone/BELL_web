@@ -6,14 +6,15 @@
 
     
     .input-group.search_bar
-        input.form-control.search_bar(type='text' name='mycity' placeholder='강남구')
+        input#address.form-control.search_bar(type='text' name='mycity' placeholder='강남구', value='강남구')
     br
     .input-group-append
-        button.btn.btn-dark.searchButton(type='submit') SEARCH
+        button#submit.btn.btn-dark.searchButton(type='submit', value='search') SEARCH
 
     //- #floating-panel
-    //-     input#address(type='textbox', value='Sydney, NSW')
-    //-     input#submit(type='button', value='Geocode')
+    //-     input#address(type='textbox', value='강남구')
+    //-     br
+    //-     input#submit(type='button', value='search')
             
 div#drop.float
     .dropdown
