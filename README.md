@@ -17,19 +17,25 @@
   미세먼지 조회 Node.js 웹 서비스 <br/>
 </p>
 
+<p align="center">
+  <img src="./screenshots/screen1.png" width="800" />
+  <img src="./screenshots/screen2.png" width="800" />
+  <img src="./screenshots/screen3.gif" width="800" />
+</p>
+
 <br/>
 
-### 선수 환경
+## 선수 환경
 ```
 node 10.16.3
 npm 6.10.2
 ```
-### 사용 라이브러리
+## 사용 라이브러리
 
 - [chart.js](https://www.chartjs.org/)
 
 
-### 시작 방법
+## 시작 방법
 
 ```
 $ git clone https://github.com/mju-capstone/BELL_web.git
@@ -41,3 +47,5 @@ $ nodemon
 <br/>
 
 > 데이터 분석 페이지는 [여기](https://github.com/mju-capstone/BELL_data_analysis)
+
+> iOS 앱은 [여기](https://github.com/ChoiEunji0114/BELL_iOS)
