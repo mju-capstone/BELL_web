@@ -4,16 +4,12 @@
     br
     br
 
-    
-    .input-group.search_bar
-        input.form-control.search_bar(type='text' name='mycity' placeholder='강남구')
-    br
-    .input-group-append
-        button.btn.btn-dark.searchButton(type='submit') SEARCH
-
-    //- #floating-panel
-    //-     input#address(type='textbox', value='Sydney, NSW')
-    //-     input#submit(type='button', value='Geocode')
+    form(action='../search' method='POST')
+        .input-group.search_bar
+            input.form-control.search_bar(type='text' name='mycity' placeholder='강남구')
+        br
+        .input-group-append
+            button.btn.btn-dark.searchButton(type='submit') SEARCH
             
 div#drop.float
     .dropdown

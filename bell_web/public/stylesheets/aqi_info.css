@@ -32,7 +32,7 @@ html, body {
     font-family: 'Roboto','sans-serif';
     line-height: 30px;
     padding-left: 10px;
-} */
+} 
 
 #map_container {
     width: 100%;
@@ -59,16 +59,16 @@ html, body {
 #img {
     position: relative;
     left: 32%;
-    top : -27%;
+    top : -20%;
     float: left;
-
 }
+
 #img2 {
     position: relative;
     left : 11%;
-    top : -5%;
-
+    top : 5%;
 }
+
 #info_bg1 {
     margin: 4% 0% 0% 0%;
     position: relative;
@@ -123,8 +123,6 @@ html, body {
     position: absolute;
     width: 47%;
     height: 85%;
-  
-
 }
 
 h2.infotitle {
@@ -161,9 +159,8 @@ h2.f_info2 {
 
 img.relative.gps {
     position: absolute;
-
-    left: 18.5%;
-    top: 11%;
+    left: 21%;
+    top: 9%;
 }
 
 img.relative.gps2 {
@@ -171,7 +168,6 @@ img.relative.gps2 {
     left: 19%;    
     top: 6%;
 }
-
 
 h2.date {
     padding : 10% 0% 0% 0%;
@@ -196,7 +192,10 @@ h3.con {
     font-size: 125%;
     font-family: 'Nanum Gothic', sans-serif;
     text-align: center; 
+    top: 5%;
+    position: relative;
 }
+
 h3.cong {
     font-size: 125%;
     font-family: 'Nanum Gothic', sans-serif;
