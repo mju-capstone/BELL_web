@@ -104,55 +104,55 @@ $(document).ready(function(){
 
 
 
-// function initialize() {
-//     var  map2  =  new  google.maps.Map(document.getElementById('map2'),  {  
-//         center:  new  google.maps.LatLng(37.557941, 126.987481),  
-//         mapTypeId:  google.maps.MapTypeId.ROADMAP,  
-//         zoom:  12  
-//     });  
+function initialize() {
+    var  map2  =  new  google.maps.Map(document.getElementById('map2'),  {  
+        center:  new  google.maps.LatLng(37.557941, 126.987481),  
+        mapTypeId:  google.maps.MapTypeId.ROADMAP,  
+        zoom:  12  
+    });  
 
-//     var  t  =  new  Date().getTime();  
-//     var  waqiMapOverlay  =  new  google.maps.ImageMapType({  
-//         getTileUrl:  function(coord,  zoom)  {  
-//             return  'https://tiles.aqicn.org/tiles/usepa-aqi/'  +  zoom  +  "/"  +  coord.x  +  "/"  +  coord.y  +  ".png?token=42449a98a32888268828e3059c4489aef7625391";  
-//         },  
-//         name:  "Air  Quality",  
-//     });  
-//     map2.overlayMapTypes.insertAt(0,waqiMapOverlay);  
+    var  t  =  new  Date().getTime();  
+    var  waqiMapOverlay  =  new  google.maps.ImageMapType({  
+        getTileUrl:  function(coord,  zoom)  {  
+            return  'https://tiles.aqicn.org/tiles/usepa-aqi/'  +  zoom  +  "/"  +  coord.x  +  "/"  +  coord.y  +  ".png?token=42449a98a32888268828e3059c4489aef7625391";  
+        },  
+        name:  "Air  Quality",  
+    });  
+    map2.overlayMapTypes.insertAt(0,waqiMapOverlay);  
 
+}
+
+
+
+
+// window.initMap = function() {
+//     var map = new google.maps.Map(document.getElementById('map'), {
+//         zoom: 8,
+//         center: {lat: -34.397, lng: 150.644}
+//     });
+//     var geocoder = new google.maps.Geocoder();
+
+//     document.getElementById('submit').addEventListener('click', function() {
+//         geocodeAddress(geocoder, map);
+//     });
+// }
+
+// function geocodeAddress(geocoder, resultsMap) {
+//     var address = document.getElementById('address').value;
+//     geocoder.geocode({'address': address}, function(results, status) {
+//         if (status === 'OK') {
+//             resultsMap.setCenter(results[0].geometry.location);
+//             var marker = new google.maps.Marker({
+//             map: resultsMap,
+//             position: results[0].geometry.location
+//             });
+//         } else {
+//             alert('Geocode was not successful for the following reason: ' + status);
+//         }
+//     });
 // }
 
 
 
 
-function initMap() {
-    var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 15,
-        center: {lat: 37.498156, lng: 127.027615}
-    });
-    var geocoder = new google.maps.Geocoder();
-
-    document.getElementById('submit').addEventListener('click', function() {
-        geocodeAddress(geocoder, map);
-    });
-}
-
-function geocodeAddress(geocoder, resultsMap) {
-    var address = document.getElementById('address').value;
-    geocoder.geocode({'address': address}, function(results, status) {
-        if (status === 'OK') {
-            resultsMap.setCenter(results[0].geometry.location);
-            var marker = new google.maps.Marker({
-            map: resultsMap,
-            position: results[0].geometry.location
-            });
-        } else {
-            alert('Geocode was not successful for the following reason: ' + status);
-        }
-    });
-}
-
-google.maps.event.addDomListener(window, 'load', initMap);
-
-
-// google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', initialize);
