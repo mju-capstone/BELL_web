@@ -246,7 +246,7 @@ h3.state_d{
     font-family: 'Nanum Gothic', sans-serif;
     letter-spacing : -3px;
     margin: 0% 0% 0% 32%;
-
+    top: 57.5%;
 }
 
 h3.pm10_text{
@@ -313,7 +313,6 @@ h3.pm25_gra_2 {
     position: absolute;
     left: 65%;
     top : 88%;
-
 }
 
 span.badge.pm10 {
